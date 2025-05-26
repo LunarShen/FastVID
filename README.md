@@ -1,5 +1,13 @@
 # FastVID: Dynamic Density Pruning for Fast Video Large Language Models
 
+We propose FastVID, a novel **training-free** pruning framework that employs Dynamic Temporal Segmentation to partition videos into temporally ordered segments and Density Spatiotemporal Pruning to retain global segment information and key details.
+On LLaVA-OneVision-7B, FastVID effectively prunes **90.3%** of video tokens, reduces FLOPs to **8.3%**, and accelerates the prefilling stage by **7.1x**, while maintaining **98.0%** of the original accuracy. 
+
+![SOTA_OV](imgs/sota_ov.png)
+
+![LATENCY](imgs/latency.png)
+
+
 ## TODO:
 
 Currently, the implementation provided is a **parallelized version** for computing density scores, as described in the Efficiency Comparison section on page 8 of the main paper.
