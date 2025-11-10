@@ -1,0 +1,973 @@
+The following values were not passed to `accelerate launch` and had defaults used instead:
+		More than one GPU was found, enabling multi-GPU training.
+		If this was unintended please pass in `--num_processes=1`.
+	`--num_machines` was set to a value of `1`
+	`--mixed_precision` was set to a value of `'no'`
+	`--dynamo_backend` was set to a value of `'no'`
+To avoid this warning pass in values for each of the problematic parameters or run `accelerate config`.
+[32m2025-11-03 19:46:27.975[0m | [1mINFO    [0m | [36m__main__[0m:[36mcli_evaluate[0m:[36m295[0m - [1mVerbosity set to INFO[0m
+[32m2025-11-03 19:46:27.975[0m | [1mINFO    [0m | [36m__main__[0m:[36mcli_evaluate[0m:[36m295[0m - [1mVerbosity set to INFO[0m
+[32m2025-11-03 19:46:27.975[0m | [1mINFO    [0m | [36m__main__[0m:[36mcli_evaluate[0m:[36m295[0m - [1mVerbosity set to INFO[0m
+[32m2025-11-03 19:46:27.976[0m | [1mINFO    [0m | [36m__main__[0m:[36mcli_evaluate[0m:[36m295[0m - [1mVerbosity set to INFO[0m
+[32m2025-11-03 19:46:29.601[0m | [33m[1mWARNING [0m | [36mlmms_eval.tasks[0m:[36m_get_task_and_group[0m:[36m473[0m - [33m[1mThe tag coco_karpathy is already registered as a group, this tag will not be registered. This may affect tasks you want to call.[0m
+[32m2025-11-03 19:46:29.601[0m | [33m[1mWARNING [0m | [36mlmms_eval.tasks[0m:[36m_get_task_and_group[0m:[36m473[0m - [33m[1mThe tag coco_karpathy is already registered as a group, this tag will not be registered. This may affect tasks you want to call.[0m
+[32m2025-11-03 19:46:29.601[0m | [33m[1mWARNING [0m | [36mlmms_eval.tasks[0m:[36m_get_task_and_group[0m:[36m473[0m - [33m[1mThe tag coco_karpathy is already registered as a group, this tag will not be registered. This may affect tasks you want to call.[0m
+[32m2025-11-03 19:46:29.622[0m | [33m[1mWARNING [0m | [36mlmms_eval.tasks[0m:[36m_get_task_and_group[0m:[36m473[0m - [33m[1mThe tag coco_karpathy is already registered as a group, this tag will not be registered. This may affect tasks you want to call.[0m
+[32m2025-11-03 19:46:29.622[0m | [33m[1mWARNING [0m | [36mlmms_eval.tasks[0m:[36m_get_task_and_group[0m:[36m473[0m - [33m[1mThe tag coco_karpathy is already registered as a group, this tag will not be registered. This may affect tasks you want to call.[0m
+[32m2025-11-03 19:46:29.622[0m | [33m[1mWARNING [0m | [36mlmms_eval.tasks[0m:[36m_get_task_and_group[0m:[36m473[0m - [33m[1mThe tag coco_karpathy is already registered as a group, this tag will not be registered. This may affect tasks you want to call.[0m
+[32m2025-11-03 19:46:29.634[0m | [33m[1mWARNING [0m | [36mlmms_eval.tasks[0m:[36m_get_task_and_group[0m:[36m473[0m - [33m[1mThe tag coco_karpathy is already registered as a group, this tag will not be registered. This may affect tasks you want to call.[0m
+[32m2025-11-03 19:46:29.644[0m | [33m[1mWARNING [0m | [36mlmms_eval.tasks[0m:[36m_get_task_and_group[0m:[36m473[0m - [33m[1mThe tag coco_karpathy is already registered as a group, this tag will not be registered. This may affect tasks you want to call.[0m
+[32m2025-11-03 19:46:49.860[0m | [1mINFO    [0m | [36m__main__[0m:[36mcli_evaluate_single[0m:[36m378[0m - [1mEvaluation tracker args: {'output_path': './logs/'}[0m
+[32m2025-11-03 19:46:49.860[0m | [1mINFO    [0m | [36m__main__[0m:[36mcli_evaluate_single[0m:[36m378[0m - [1mEvaluation tracker args: {'output_path': './logs/'}[0m
+[32m2025-11-03 19:46:49.860[0m | [1mINFO    [0m | [36m__main__[0m:[36mcli_evaluate_single[0m:[36m378[0m - [1mEvaluation tracker args: {'output_path': './logs/'}[0m
+[32m2025-11-03 19:46:49.860[0m | [1mINFO    [0m | [36m__main__[0m:[36mcli_evaluate_single[0m:[36m378[0m - [1mEvaluation tracker args: {'output_path': './logs/'}[0m
+[32m2025-11-03 19:46:49.861[0m | [1mINFO    [0m | [36m__main__[0m:[36mcli_evaluate_single[0m:[36m467[0m - [1mSelected Tasks: ['videomme'][0m
+[32m2025-11-03 19:46:49.861[0m | [1mINFO    [0m | [36m__main__[0m:[36mcli_evaluate_single[0m:[36m467[0m - [1mSelected Tasks: ['videomme'][0m
+[32m2025-11-03 19:46:49.861[0m | [1mINFO    [0m | [36m__main__[0m:[36mcli_evaluate_single[0m:[36m467[0m - [1mSelected Tasks: ['videomme'][0m
+[32m2025-11-03 19:46:49.861[0m | [1mINFO    [0m | [36m__main__[0m:[36mcli_evaluate_single[0m:[36m467[0m - [1mSelected Tasks: ['videomme'][0m
+[32m2025-11-03 19:46:49.861[0m | [1mINFO    [0m | [36mlmms_eval.evaluator[0m:[36msimple_evaluate[0m:[36m155[0m - [1mSetting random seed to 0 | Setting numpy seed to 1234 | Setting torch manual seed to 1234[0m
+[32m2025-11-03 19:46:49.861[0m | [1mINFO    [0m | [36mlmms_eval.evaluator[0m:[36msimple_evaluate[0m:[36m155[0m - [1mSetting random seed to 0 | Setting numpy seed to 1234 | Setting torch manual seed to 1234[0m
+[32m2025-11-03 19:46:49.862[0m | [1mINFO    [0m | [36mlmms_eval.evaluator[0m:[36msimple_evaluate[0m:[36m155[0m - [1mSetting random seed to 0 | Setting numpy seed to 1234 | Setting torch manual seed to 1234[0m
+[32m2025-11-03 19:46:49.862[0m | [1mINFO    [0m | [36mlmms_eval.evaluator[0m:[36msimple_evaluate[0m:[36m155[0m - [1mSetting random seed to 0 | Setting numpy seed to 1234 | Setting torch manual seed to 1234[0m
+
+Loading checkpoint shards:   0%|          | 0/5 [00:00<?, ?it/s]
+Loading checkpoint shards:   0%|          | 0/5 [00:00<?, ?it/s]
+Loading checkpoint shards:   0%|          | 0/5 [00:00<?, ?it/s]
+Loading checkpoint shards:   0%|          | 0/5 [00:00<?, ?it/s]
+Loading checkpoint shards:  20%|██        | 1/5 [00:01<00:04,  1.18s/it]
+Loading checkpoint shards:  20%|██        | 1/5 [00:01<00:05,  1.36s/it]
+Loading checkpoint shards:  20%|██        | 1/5 [00:01<00:05,  1.36s/it]
+Loading checkpoint shards:  20%|██        | 1/5 [00:01<00:05,  1.36s/it]
+Loading checkpoint shards:  40%|████      | 2/5 [00:02<00:03,  1.09s/it]
+Loading checkpoint shards:  40%|████      | 2/5 [00:02<00:03,  1.14s/it]
+Loading checkpoint shards:  40%|████      | 2/5 [00:02<00:03,  1.17s/it]
+Loading checkpoint shards:  40%|████      | 2/5 [00:02<00:03,  1.17s/it]
+Loading checkpoint shards:  60%|██████    | 3/5 [00:03<00:02,  1.16s/it]
+Loading checkpoint shards:  60%|██████    | 3/5 [00:03<00:02,  1.22s/it]
+Loading checkpoint shards:  60%|██████    | 3/5 [00:03<00:02,  1.18s/it]
+Loading checkpoint shards:  60%|██████    | 3/5 [00:03<00:02,  1.18s/it]
+Loading checkpoint shards:  80%|████████  | 4/5 [00:04<00:01,  1.25s/it]
+Loading checkpoint shards:  80%|████████  | 4/5 [00:04<00:01,  1.22s/it]
+Loading checkpoint shards:  80%|████████  | 4/5 [00:04<00:01,  1.23s/it]
+Loading checkpoint shards:  80%|████████  | 4/5 [00:04<00:01,  1.22s/it]
+Loading checkpoint shards: 100%|██████████| 5/5 [00:05<00:00,  1.08it/s]
+Loading checkpoint shards: 100%|██████████| 5/5 [00:05<00:00,  1.05s/it]
+
+Loading checkpoint shards: 100%|██████████| 5/5 [00:05<00:00,  1.09it/s]
+Loading checkpoint shards: 100%|██████████| 5/5 [00:05<00:00,  1.09it/s]
+Loading checkpoint shards: 100%|██████████| 5/5 [00:05<00:00,  1.09it/s]
+Loading checkpoint shards: 100%|██████████| 5/5 [00:05<00:00,  1.05s/it]
+
+Loading checkpoint shards: 100%|██████████| 5/5 [00:05<00:00,  1.05s/it]
+
+Loading checkpoint shards: 100%|██████████| 5/5 [00:05<00:00,  1.05s/it]
+[32m2025-11-03 19:46:59.620[0m | [1mINFO    [0m | [36mlmms_eval.models.qwenvlutils.modeling_qwen2_5_vl[0m:[36mset_my_kwargs[0m:[36m1545[0m - [1mattn_implementation=flash_attention_2 fastvid_retention_ratio=0.27 fastvid_DySeg_c=8 fastvid_DySeg_tau=0.84 fastvid_DySeg_ignore=0.95 fastvid_STPrune_d=0.4 fastvid_DTM_p=4 fastvid_DTM_beta=0.6[0m
+[32m2025-11-03 19:46:59.622[0m | [1mINFO    [0m | [36mlmms_eval.models.qwenvlutils.modeling_qwen2_5_vl[0m:[36mset_my_kwargs[0m:[36m1545[0m - [1mattn_implementation=flash_attention_2 fastvid_retention_ratio=0.27 fastvid_DySeg_c=8 fastvid_DySeg_tau=0.84 fastvid_DySeg_ignore=0.95 fastvid_STPrune_d=0.4 fastvid_DTM_p=4 fastvid_DTM_beta=0.6[0m
+[32m2025-11-03 19:46:59.623[0m | [1mINFO    [0m | [36mlmms_eval.models.qwenvlutils.modeling_qwen2_5_vl[0m:[36mset_my_kwargs[0m:[36m1545[0m - [1mattn_implementation=flash_attention_2 fastvid_retention_ratio=0.27 fastvid_DySeg_c=8 fastvid_DySeg_tau=0.84 fastvid_DySeg_ignore=0.95 fastvid_STPrune_d=0.4 fastvid_DTM_p=4 fastvid_DTM_beta=0.6[0m
+[32m2025-11-03 19:46:59.623[0m | [1mINFO    [0m | [36mlmms_eval.models.qwenvlutils.modeling_qwen2_5_vl[0m:[36mset_my_kwargs[0m:[36m1545[0m - [1mattn_implementation=flash_attention_2 fastvid_retention_ratio=0.27 fastvid_DySeg_c=8 fastvid_DySeg_tau=0.84 fastvid_DySeg_ignore=0.95 fastvid_STPrune_d=0.4 fastvid_DTM_p=4 fastvid_DTM_beta=0.6[0m
+Using a slow image processor as `use_fast` is unset and a slow processor was saved with this model. `use_fast=True` will be the default behavior in v4.52, even if the model was saved with a slow processor. This will result in minor differences in outputs. You'll still be able to use a slow processor with `use_fast=False`.
+Using a slow image processor as `use_fast` is unset and a slow processor was saved with this model. `use_fast=True` will be the default behavior in v4.52, even if the model was saved with a slow processor. This will result in minor differences in outputs. You'll still be able to use a slow processor with `use_fast=False`.
+Using a slow image processor as `use_fast` is unset and a slow processor was saved with this model. `use_fast=True` will be the default behavior in v4.52, even if the model was saved with a slow processor. This will result in minor differences in outputs. You'll still be able to use a slow processor with `use_fast=False`.
+Using a slow image processor as `use_fast` is unset and a slow processor was saved with this model. `use_fast=True` will be the default behavior in v4.52, even if the model was saved with a slow processor. This will result in minor differences in outputs. You'll still be able to use a slow processor with `use_fast=False`.
+[32m2025-11-03 19:47:00.787[0m | [1mINFO    [0m | [36mlmms_eval.models.qwen2_5_vl[0m:[36m__init__[0m:[36m123[0m - [1mUsing 4 devices with data parallelism[0m
+[32m2025-11-03 19:47:00.788[0m | [1mINFO    [0m | [36mlmms_eval.evaluator_utils[0m:[36mfrom_taskdict[0m:[36m91[0m - [1mNo metadata found in task config for videomme, using default n_shot=0[0m
+[32m2025-11-03 19:47:00.788[0m | [1mINFO    [0m | [36mlmms_eval.api.task[0m:[36mbuild_all_requests[0m:[36m425[0m - [1mBuilding contexts for videomme on rank 0...[0m
+
+  0%|          | 0/675 [00:00<?, ?it/s][32m2025-11-03 19:47:00.832[0m | [1mINFO    [0m | [36mlmms_eval.evaluator_utils[0m:[36mfrom_taskdict[0m:[36m91[0m - [1mNo metadata found in task config for videomme, using default n_shot=0[0m
+[32m2025-11-03 19:47:00.833[0m | [1mINFO    [0m | [36mlmms_eval.api.task[0m:[36mbuild_all_requests[0m:[36m425[0m - [1mBuilding contexts for videomme on rank 2...[0m
+
+  0%|          | 0/675 [00:00<?, ?it/s][32m2025-11-03 19:47:00.859[0m | [1mINFO    [0m | [36mlmms_eval.evaluator_utils[0m:[36mfrom_taskdict[0m:[36m91[0m - [1mNo metadata found in task config for videomme, using default n_shot=0[0m
+[32m2025-11-03 19:47:00.859[0m | [1mINFO    [0m | [36mlmms_eval.api.task[0m:[36mbuild_all_requests[0m:[36m425[0m - [1mBuilding contexts for videomme on rank 1...[0m
+
+  0%|          | 0/675 [00:00<?, ?it/s][32m2025-11-03 19:47:00.878[0m | [1mINFO    [0m | [36mlmms_eval.evaluator_utils[0m:[36mfrom_taskdict[0m:[36m91[0m - [1mNo metadata found in task config for videomme, using default n_shot=0[0m
+[32m2025-11-03 19:47:00.878[0m | [1mINFO    [0m | [36mlmms_eval.api.task[0m:[36mbuild_all_requests[0m:[36m425[0m - [1mBuilding contexts for videomme on rank 3...[0m
+
+  0%|          | 0/675 [00:00<?, ?it/s]
+ 41%|████      | 277/675 [00:00<00:00, 2766.84it/s]
+ 41%|████▏     | 280/675 [00:00<00:00, 2790.85it/s]
+ 41%|████      | 276/675 [00:00<00:00, 2753.08it/s]
+ 41%|████▏     | 280/675 [00:00<00:00, 2792.25it/s]
+ 82%|████████▏ | 554/675 [00:00<00:00, 2738.55it/s]
+ 84%|████████▍ | 566/675 [00:00<00:00, 2828.37it/s]
+100%|██████████| 675/675 [00:00<00:00, 2739.06it/s]
+
+ 82%|████████▏ | 552/675 [00:00<00:00, 2750.04it/s]
+100%|██████████| 675/675 [00:00<00:00, 2804.50it/s]
+
+ 84%|████████▎ | 565/675 [00:00<00:00, 2825.15it/s]
+100%|██████████| 675/675 [00:00<00:00, 2758.75it/s]
+
+100%|██████████| 675/675 [00:00<00:00, 2828.86it/s]
+[32m2025-11-03 19:47:01.122[0m | [1mINFO    [0m | [36mlmms_eval.evaluator[0m:[36mevaluate[0m:[36m447[0m - [1mRunning generate_until requests[0m
+[32m2025-11-03 19:47:01.122[0m | [1mINFO    [0m | [36mlmms_eval.evaluator[0m:[36mevaluate[0m:[36m447[0m - [1mRunning generate_until requests[0m
+[32m2025-11-03 19:47:01.122[0m | [1mINFO    [0m | [36mlmms_eval.evaluator[0m:[36mevaluate[0m:[36m447[0m - [1mRunning generate_until requests[0m
+[32m2025-11-03 19:47:01.122[0m | [1mINFO    [0m | [36mlmms_eval.evaluator[0m:[36mevaluate[0m:[36m447[0m - [1mRunning generate_until requests[0m
+
+Model Responding:   0%|          | 0/675 [00:00<?, ?it/s]qwen-vl-utils using decord to read video.
+qwen-vl-utils using decord to read video.
+qwen-vl-utils using decord to read video.
+qwen-vl-utils using decord to read video.
+It looks like you are trying to rescale already rescaled images. If the input images have pixel values between 0 and 1, set `do_rescale=False` to avoid rescaling them again.
+
+Model Responding:   0%|          | 1/675 [00:39<7:27:36, 39.85s/it]
+Model Responding:   0%|          | 2/675 [01:20<7:32:09, 40.31s/it]
+Model Responding:   0%|          | 3/675 [01:56<7:10:25, 38.43s/it]
+Model Responding:   1%|          | 4/675 [02:40<7:35:30, 40.73s/it]
+Model Responding:   1%|          | 5/675 [03:18<7:21:52, 39.57s/it]
+Model Responding:   1%|          | 6/675 [03:32<5:43:02, 30.77s/it]
+Model Responding:   1%|          | 7/675 [04:36<7:45:20, 41.80s/it]It looks like you are trying to rescale already rescaled images. If the input images have pixel values between 0 and 1, set `do_rescale=False` to avoid rescaling them again.
+It looks like you are trying to rescale already rescaled images. If the input images have pixel values between 0 and 1, set `do_rescale=False` to avoid rescaling them again.
+
+Model Responding:   1%|          | 8/675 [05:33<8:37:37, 46.56s/it]
+Model Responding:   1%|▏         | 9/675 [06:31<9:16:10, 50.11s/it]
+Model Responding:   1%|▏         | 10/675 [07:03<8:12:58, 44.48s/it]
+Model Responding:   2%|▏         | 11/675 [07:30<7:13:29, 39.17s/it]
+Model Responding:   2%|▏         | 12/675 [08:11<7:20:35, 39.87s/it]
+Model Responding:   2%|▏         | 13/675 [08:49<7:13:29, 39.29s/it][h264 @ 0x4dd8cfc0] mmco: unref short failure
+[h264 @ 0x4dd8cfc0] mmco: unref short failure
+[h264 @ 0x4dd8cfc0] mmco: unref short failure
+
+Model Responding:   2%|▏         | 14/675 [09:36<7:38:28, 41.62s/it][h264 @ 0x4dd8cfc0] mmco: unref short failure
+[h264 @ 0x4dd8cfc0] mmco: unref short failure
+[h264 @ 0x4dd8cfc0] mmco: unref short failure
+[h264 @ 0x4dd8cfc0] mmco: unref short failure
+[h264 @ 0x4dd8cfc0] mmco: unref short failure
+[h264 @ 0x4dd8cfc0] mmco: unref short failure
+[h264 @ 0x4dd8cfc0] mmco: unref short failure
+[h264 @ 0x4dd8cfc0] mmco: unref short failure
+[h264 @ 0x4dd8cfc0] mmco: unref short failure
+[h264 @ 0x4dd8cfc0] mmco: unref short failure
+[h264 @ 0x4dd8cfc0] mmco: unref short failure
+[h264 @ 0x4dd8cfc0] mmco: unref short failure
+[h264 @ 0x4dd8cfc0] mmco: unref short failure
+[h264 @ 0x4dd8cfc0] mmco: unref short failure
+
+Model Responding:   2%|▏         | 15/675 [09:54<6:19:03, 34.46s/it]
+Model Responding:   2%|▏         | 16/675 [10:44<7:10:09, 39.16s/it]
+Model Responding:   3%|▎         | 17/675 [10:54<5:31:46, 30.25s/it]
+Model Responding:   3%|▎         | 18/675 [11:06<4:33:45, 25.00s/it]
+Model Responding:   3%|▎         | 19/675 [11:50<5:34:10, 30.56s/it]
+Model Responding:   3%|▎         | 20/675 [12:30<6:05:09, 33.45s/it]
+Model Responding:   3%|▎         | 21/675 [12:43<4:58:28, 27.38s/it]
+Model Responding:   3%|▎         | 22/675 [13:29<5:57:20, 32.83s/it]
+Model Responding:   3%|▎         | 23/675 [14:11<6:26:02, 35.53s/it]
+Model Responding:   4%|▎         | 24/675 [15:02<7:17:27, 40.32s/it]It looks like you are trying to rescale already rescaled images. If the input images have pixel values between 0 and 1, set `do_rescale=False` to avoid rescaling them again.
+
+Model Responding:   4%|▎         | 25/675 [15:13<5:41:04, 31.48s/it]
+Model Responding:   4%|▍         | 26/675 [15:42<5:31:47, 30.67s/it]
+Model Responding:   4%|▍         | 27/675 [15:54<4:29:21, 24.94s/it]
+Model Responding:   4%|▍         | 28/675 [16:22<4:40:36, 26.02s/it]
+Model Responding:   4%|▍         | 29/675 [16:44<4:27:03, 24.80s/it]
+Model Responding:   4%|▍         | 30/675 [17:28<5:27:46, 30.49s/it]
+Model Responding:   5%|▍         | 31/675 [17:50<5:00:46, 28.02s/it]
+Model Responding:   5%|▍         | 32/675 [18:34<5:51:27, 32.80s/it]
+Model Responding:   5%|▍         | 33/675 [19:24<6:46:54, 38.03s/it]
+Model Responding:   5%|▌         | 34/675 [20:00<6:40:00, 37.44s/it]
+Model Responding:   5%|▌         | 35/675 [20:37<6:37:03, 37.22s/it]
+Model Responding:   5%|▌         | 36/675 [21:17<6:46:16, 38.15s/it]
+Model Responding:   5%|▌         | 37/675 [22:06<7:20:11, 41.40s/it]
+Model Responding:   6%|▌         | 38/675 [22:35<6:39:34, 37.64s/it]
+Model Responding:   6%|▌         | 39/675 [23:14<6:43:38, 38.08s/it]
+Model Responding:   6%|▌         | 40/675 [24:06<7:25:58, 42.14s/it]
+Model Responding:   6%|▌         | 41/675 [24:50<7:30:03, 42.59s/it]
+Model Responding:   6%|▌         | 42/675 [25:28<7:15:52, 41.32s/it]
+Model Responding:   6%|▋         | 43/675 [26:01<6:49:25, 38.87s/it]
+Model Responding:   7%|▋         | 44/675 [26:49<7:18:00, 41.65s/it]
+Model Responding:   7%|▋         | 45/675 [27:32<7:22:28, 42.14s/it]
+Model Responding:   7%|▋         | 46/675 [27:41<5:36:55, 32.14s/it]
+Model Responding:   7%|▋         | 47/675 [28:20<5:55:45, 33.99s/it]
+Model Responding:   7%|▋         | 48/675 [29:01<6:18:36, 36.23s/it]
+Model Responding:   7%|▋         | 49/675 [29:29<5:51:54, 33.73s/it]
+Model Responding:   7%|▋         | 50/675 [30:26<7:03:52, 40.69s/it]
+Model Responding:   8%|▊         | 51/675 [31:10<7:15:24, 41.87s/it]
+Model Responding:   8%|▊         | 52/675 [32:28<9:04:28, 52.44s/it]
+Model Responding:   8%|▊         | 53/675 [32:42<7:05:26, 41.04s/it]
+Model Responding:   8%|▊         | 54/675 [33:21<6:59:50, 40.56s/it]
+Model Responding:   8%|▊         | 55/675 [34:42<9:03:45, 52.62s/it]
+Model Responding:   8%|▊         | 56/675 [35:54<10:03:38, 58.51s/it]
+Model Responding:   8%|▊         | 57/675 [36:35<9:06:00, 53.01s/it] 
+Model Responding:   9%|▊         | 58/675 [37:39<9:41:27, 56.54s/it]
+Model Responding:   9%|▊         | 59/675 [38:17<8:43:19, 50.97s/it]
+Model Responding:   9%|▉         | 60/675 [39:03<8:26:25, 49.41s/it]
+Model Responding:   9%|▉         | 61/675 [39:20<6:44:48, 39.56s/it]
+Model Responding:   9%|▉         | 62/675 [40:05<7:02:31, 41.36s/it]
+Model Responding:   9%|▉         | 63/675 [40:57<7:32:58, 44.41s/it]
+Model Responding:   9%|▉         | 64/675 [41:13<6:07:03, 36.05s/it]
+Model Responding:  10%|▉         | 65/675 [41:53<6:16:49, 37.06s/it]
+Model Responding:  10%|▉         | 66/675 [42:47<7:07:07, 42.08s/it]
+Model Responding:  10%|▉         | 67/675 [43:22<6:46:43, 40.14s/it]
+Model Responding:  10%|█         | 68/675 [43:55<6:22:34, 37.82s/it]
+Model Responding:  10%|█         | 69/675 [45:05<8:00:35, 47.58s/it]
+Model Responding:  10%|█         | 70/675 [45:31<6:54:36, 41.12s/it]
+Model Responding:  11%|█         | 71/675 [46:11<6:49:39, 40.70s/it]
+Model Responding:  11%|█         | 72/675 [46:17<5:04:37, 30.31s/it]
+Model Responding:  11%|█         | 73/675 [46:38<4:36:07, 27.52s/it]
+Model Responding:  11%|█         | 74/675 [47:06<4:38:47, 27.83s/it]
+Model Responding:  11%|█         | 75/675 [47:26<4:13:52, 25.39s/it]
+Model Responding:  11%|█▏        | 76/675 [47:38<3:31:56, 21.23s/it]
+Model Responding:  11%|█▏        | 77/675 [48:27<4:56:25, 29.74s/it]
+Model Responding:  12%|█▏        | 78/675 [48:56<4:53:09, 29.46s/it]
+Model Responding:  12%|█▏        | 79/675 [49:11<4:08:15, 24.99s/it]
+Model Responding:  12%|█▏        | 80/675 [49:50<4:51:00, 29.35s/it]
+Model Responding:  12%|█▏        | 81/675 [50:36<5:40:28, 34.39s/it]
+Model Responding:  12%|█▏        | 82/675 [51:19<6:04:05, 36.84s/it]
+Model Responding:  12%|█▏        | 83/675 [51:47<5:37:25, 34.20s/it]
+Model Responding:  12%|█▏        | 84/675 [52:16<5:22:08, 32.71s/it]
+Model Responding:  13%|█▎        | 85/675 [52:44<5:08:21, 31.36s/it]
+Model Responding:  13%|█▎        | 86/675 [53:11<4:54:06, 29.96s/it]
+Model Responding:  13%|█▎        | 87/675 [53:56<5:38:46, 34.57s/it]
+Model Responding:  13%|█▎        | 88/675 [54:36<5:54:04, 36.19s/it]
+Model Responding:  13%|█▎        | 89/675 [54:44<4:31:14, 27.77s/it]
+Model Responding:  13%|█▎        | 90/675 [56:01<6:52:58, 42.36s/it]
+Model Responding:  13%|█▎        | 91/675 [56:45<6:57:57, 42.94s/it][h264 @ 0x4dec9b80] mmco: unref short failure
+[h264 @ 0x4dec9b80] mmco: unref short failure
+
+Model Responding:  14%|█▎        | 92/675 [57:32<7:08:22, 44.09s/it]
+Model Responding:  14%|█▍        | 93/675 [58:23<7:29:23, 46.33s/it]
+Model Responding:  14%|█▍        | 94/675 [59:04<7:12:03, 44.62s/it]
+Model Responding:  14%|█▍        | 95/675 [59:30<6:16:25, 38.94s/it]
+Model Responding:  14%|█▍        | 96/675 [59:54<5:32:29, 34.45s/it]
+Model Responding:  14%|█▍        | 97/675 [1:00:38<5:59:36, 37.33s/it]
+Model Responding:  15%|█▍        | 98/675 [1:00:49<4:43:50, 29.52s/it]
+Model Responding:  15%|█▍        | 99/675 [1:01:25<5:00:40, 31.32s/it]
+Model Responding:  15%|█▍        | 100/675 [1:01:55<4:57:49, 31.08s/it]
+Model Responding:  15%|█▍        | 101/675 [1:02:24<4:50:22, 30.35s/it]
+Model Responding:  15%|█▌        | 102/675 [1:03:06<5:23:38, 33.89s/it]
+Model Responding:  15%|█▌        | 103/675 [1:03:44<5:34:01, 35.04s/it]
+Model Responding:  15%|█▌        | 104/675 [1:04:04<4:52:52, 30.77s/it]
+Model Responding:  16%|█▌        | 105/675 [1:04:15<3:55:40, 24.81s/it]
+Model Responding:  16%|█▌        | 106/675 [1:04:58<4:45:29, 30.10s/it]
+Model Responding:  16%|█▌        | 107/675 [1:05:09<3:52:56, 24.61s/it]
+Model Responding:  16%|█▌        | 108/675 [1:05:47<4:28:03, 28.37s/it]
+Model Responding:  16%|█▌        | 109/675 [1:06:09<4:09:34, 26.46s/it]
+Model Responding:  16%|█▋        | 110/675 [1:06:45<4:38:28, 29.57s/it]
+Model Responding:  16%|█▋        | 111/675 [1:06:59<3:53:39, 24.86s/it]
+Model Responding:  17%|█▋        | 112/675 [1:07:25<3:56:17, 25.18s/it]
+Model Responding:  17%|█▋        | 113/675 [1:08:02<4:28:27, 28.66s/it]
+Model Responding:  17%|█▋        | 114/675 [1:08:35<4:39:26, 29.89s/it]
+Model Responding:  17%|█▋        | 115/675 [1:09:03<4:33:45, 29.33s/it]
+Model Responding:  17%|█▋        | 116/675 [1:09:17<3:50:07, 24.70s/it]
+Model Responding:  17%|█▋        | 117/675 [1:10:02<4:48:01, 30.97s/it]
+Model Responding:  17%|█▋        | 118/675 [1:10:50<5:33:42, 35.95s/it]
+Model Responding:  18%|█▊        | 119/675 [1:11:37<6:03:58, 39.28s/it]
+Model Responding:  18%|█▊        | 120/675 [1:12:22<6:19:14, 41.00s/it]
+Model Responding:  18%|█▊        | 121/675 [1:12:33<4:55:30, 32.00s/it]
+Model Responding:  18%|█▊        | 122/675 [1:13:18<5:30:11, 35.83s/it]
+Model Responding:  18%|█▊        | 123/675 [1:13:52<5:25:09, 35.34s/it]
+Model Responding:  18%|█▊        | 124/675 [1:14:22<5:10:34, 33.82s/it]
+Model Responding:  19%|█▊        | 125/675 [1:15:02<5:26:36, 35.63s/it]
+Model Responding:  19%|█▊        | 126/675 [1:15:22<4:42:47, 30.91s/it]
+Model Responding:  19%|█▉        | 127/675 [1:16:03<5:10:11, 33.96s/it]
+Model Responding:  19%|█▉        | 128/675 [1:16:50<5:46:12, 37.98s/it]
+Model Responding:  19%|█▉        | 129/675 [1:17:41<6:20:27, 41.81s/it]
+Model Responding:  19%|█▉        | 130/675 [1:18:01<5:20:13, 35.25s/it]
+Model Responding:  19%|█▉        | 131/675 [1:18:12<4:13:17, 27.94s/it]
+Model Responding:  20%|█▉        | 132/675 [1:18:54<4:51:42, 32.23s/it]
+Model Responding:  20%|█▉        | 133/675 [1:19:24<4:43:47, 31.42s/it]
+Model Responding:  20%|█▉        | 134/675 [1:19:41<4:04:08, 27.08s/it]
+Model Responding:  20%|██        | 135/675 [1:20:45<5:44:57, 38.33s/it]
+Model Responding:  20%|██        | 136/675 [1:21:13<5:16:58, 35.29s/it]
+Model Responding:  20%|██        | 137/675 [1:21:43<5:02:21, 33.72s/it]
+Model Responding:  20%|██        | 138/675 [1:22:13<4:51:16, 32.54s/it]
+Model Responding:  21%|██        | 139/675 [1:22:55<5:15:01, 35.26s/it]
+Model Responding:  21%|██        | 140/675 [1:23:25<5:01:28, 33.81s/it]
+Model Responding:  21%|██        | 141/675 [1:24:13<5:37:07, 37.88s/it]
+Model Responding:  21%|██        | 142/675 [1:24:44<5:19:30, 35.97s/it]
+Model Responding:  21%|██        | 143/675 [1:25:38<6:06:59, 41.39s/it]
+Model Responding:  21%|██▏       | 144/675 [1:26:31<6:37:15, 44.89s/it][h264 @ 0x302f6f80] mmco: unref short failure
+[h264 @ 0x302f6f80] mmco: unref short failure
+[h264 @ 0x302f6f80] mmco: unref short failure
+[h264 @ 0x302f6f80] mmco: unref short failure
+[h264 @ 0x302f6f80] mmco: unref short failure
+[h264 @ 0x302f6f80] mmco: unref short failure
+[h264 @ 0x302f6f80] mmco: unref short failure
+[h264 @ 0x302f6f80] mmco: unref short failure
+[h264 @ 0x302f6f80] mmco: unref short failure
+[h264 @ 0x302f6f80] mmco: unref short failure
+[h264 @ 0x302f6f80] mmco: unref short failure
+[h264 @ 0x302f6f80] mmco: unref short failure
+[h264 @ 0x302f6f80] mmco: unref short failure
+[h264 @ 0x302f6f80] mmco: unref short failure
+[h264 @ 0x302f6f80] mmco: unref short failure
+[h264 @ 0x302f6f80] mmco: unref short failure
+[h264 @ 0x302f6f80] mmco: unref short failure
+
+Model Responding:  21%|██▏       | 145/675 [1:26:59<5:50:12, 39.65s/it]
+Model Responding:  22%|██▏       | 146/675 [1:27:05<4:22:14, 29.74s/it]
+Model Responding:  22%|██▏       | 147/675 [1:27:41<4:38:18, 31.63s/it]
+Model Responding:  22%|██▏       | 148/675 [1:28:16<4:46:42, 32.64s/it]
+Model Responding:  22%|██▏       | 149/675 [1:28:59<5:11:14, 35.50s/it]
+Model Responding:  22%|██▏       | 150/675 [1:29:10<4:07:06, 28.24s/it]
+Model Responding:  22%|██▏       | 151/675 [1:29:50<4:37:01, 31.72s/it]
+Model Responding:  23%|██▎       | 152/675 [1:30:20<4:33:10, 31.34s/it]
+Model Responding:  23%|██▎       | 153/675 [1:30:29<3:33:58, 24.59s/it]
+Model Responding:  23%|██▎       | 154/675 [1:30:38<2:53:50, 20.02s/it]
+Model Responding:  23%|██▎       | 155/675 [1:30:51<2:35:00, 17.89s/it]
+Model Responding:  23%|██▎       | 156/675 [1:31:04<2:21:30, 16.36s/it]
+Model Responding:  23%|██▎       | 157/675 [1:31:42<3:17:45, 22.91s/it]
+Model Responding:  23%|██▎       | 158/675 [1:32:09<3:27:05, 24.03s/it]
+Model Responding:  24%|██▎       | 159/675 [1:32:42<3:50:21, 26.79s/it]
+Model Responding:  24%|██▎       | 160/675 [1:32:54<3:10:56, 22.25s/it]
+Model Responding:  24%|██▍       | 161/675 [1:33:11<2:58:04, 20.79s/it]
+Model Responding:  24%|██▍       | 162/675 [1:33:21<2:28:47, 17.40s/it]
+Model Responding:  24%|██▍       | 163/675 [1:33:50<2:58:39, 20.94s/it]
+Model Responding:  24%|██▍       | 164/675 [1:34:32<3:52:09, 27.26s/it]
+Model Responding:  24%|██▍       | 165/675 [1:34:43<3:11:39, 22.55s/it]
+Model Responding:  25%|██▍       | 166/675 [1:35:09<3:19:27, 23.51s/it]
+Model Responding:  25%|██▍       | 167/675 [1:35:22<2:51:22, 20.24s/it]
+Model Responding:  25%|██▍       | 168/675 [1:36:07<3:55:22, 27.85s/it]
+Model Responding:  25%|██▌       | 169/675 [1:36:18<3:12:23, 22.81s/it]
+Model Responding:  25%|██▌       | 170/675 [1:36:59<3:56:46, 28.13s/it]
+Model Responding:  25%|██▌       | 171/675 [1:37:41<4:31:57, 32.38s/it]
+Model Responding:  25%|██▌       | 172/675 [1:37:50<3:32:44, 25.38s/it]
+Model Responding:  26%|██▌       | 173/675 [1:38:22<3:47:33, 27.20s/it]
+Model Responding:  26%|██▌       | 174/675 [1:39:01<4:18:23, 30.95s/it]
+Model Responding:  26%|██▌       | 175/675 [1:39:28<4:06:36, 29.59s/it]
+Model Responding:  26%|██▌       | 176/675 [1:40:08<4:33:21, 32.87s/it]
+Model Responding:  26%|██▌       | 177/675 [1:40:16<3:29:50, 25.28s/it]
+Model Responding:  26%|██▋       | 178/675 [1:40:55<4:02:30, 29.28s/it]
+Model Responding:  27%|██▋       | 179/675 [1:41:06<3:17:49, 23.93s/it]
+Model Responding:  27%|██▋       | 180/675 [1:41:34<3:28:17, 25.25s/it]
+Model Responding:  27%|██▋       | 181/675 [1:42:04<3:39:43, 26.69s/it]
+Model Responding:  27%|██▋       | 182/675 [1:43:06<5:05:37, 37.20s/it]
+Model Responding:  27%|██▋       | 183/675 [1:43:32<4:36:50, 33.76s/it]
+Model Responding:  27%|██▋       | 184/675 [1:44:05<4:33:40, 33.44s/it]
+Model Responding:  27%|██▋       | 185/675 [1:44:51<5:04:35, 37.30s/it]
+Model Responding:  28%|██▊       | 186/675 [1:45:25<4:55:51, 36.30s/it]
+Model Responding:  28%|██▊       | 187/675 [1:45:39<4:01:03, 29.64s/it]
+Model Responding:  28%|██▊       | 188/675 [1:45:48<3:10:50, 23.51s/it]
+Model Responding:  28%|██▊       | 189/675 [1:45:57<2:35:21, 19.18s/it]
+Model Responding:  28%|██▊       | 190/675 [1:46:53<4:03:02, 30.07s/it]
+Model Responding:  28%|██▊       | 191/675 [1:47:02<3:12:12, 23.83s/it]
+Model Responding:  28%|██▊       | 192/675 [1:47:34<3:30:55, 26.20s/it]
+Model Responding:  29%|██▊       | 193/675 [1:48:13<4:02:36, 30.20s/it]
+Model Responding:  29%|██▊       | 194/675 [1:49:00<4:41:07, 35.07s/it]
+Model Responding:  29%|██▉       | 195/675 [1:49:11<3:44:00, 28.00s/it]
+Model Responding:  29%|██▉       | 196/675 [1:49:59<4:30:25, 33.87s/it]
+Model Responding:  29%|██▉       | 197/675 [1:50:36<4:38:40, 34.98s/it]
+Model Responding:  29%|██▉       | 198/675 [1:51:08<4:29:26, 33.89s/it]
+Model Responding:  29%|██▉       | 199/675 [1:51:32<4:07:19, 31.18s/it]
+Model Responding:  30%|██▉       | 200/675 [1:52:19<4:43:56, 35.87s/it]
+Model Responding:  30%|██▉       | 201/675 [1:53:00<4:54:54, 37.33s/it]
+Model Responding:  30%|██▉       | 202/675 [1:53:42<5:04:24, 38.61s/it]
+Model Responding:  30%|███       | 203/675 [1:53:52<3:57:01, 30.13s/it]
+Model Responding:  30%|███       | 204/675 [1:54:13<3:36:01, 27.52s/it]
+Model Responding:  30%|███       | 205/675 [1:54:53<4:03:28, 31.08s/it]
+Model Responding:  31%|███       | 206/675 [1:55:22<3:57:45, 30.42s/it]
+Model Responding:  31%|███       | 207/675 [1:55:31<3:06:45, 23.94s/it]
+Model Responding:  31%|███       | 208/675 [1:55:41<2:35:44, 20.01s/it]
+Model Responding:  31%|███       | 209/675 [1:56:07<2:47:55, 21.62s/it]
+Model Responding:  31%|███       | 210/675 [1:56:29<2:48:36, 21.76s/it]
+Model Responding:  31%|███▏      | 211/675 [1:56:57<3:03:55, 23.78s/it]
+Model Responding:  31%|███▏      | 212/675 [1:57:42<3:51:58, 30.06s/it]
+Model Responding:  32%|███▏      | 213/675 [1:58:10<3:45:42, 29.31s/it]
+Model Responding:  32%|███▏      | 214/675 [1:58:18<2:56:06, 22.92s/it]
+Model Responding:  32%|███▏      | 215/675 [1:58:25<2:19:05, 18.14s/it][h264 @ 0x4e759540] mmco: unref short failure
+[h264 @ 0x4e759540] mmco: unref short failure
+[h264 @ 0x4e759540] mmco: unref short failure
+[h264 @ 0x4e759540] mmco: unref short failure
+[h264 @ 0x4e759540] mmco: unref short failure
+[h264 @ 0x4e759540] mmco: unref short failure
+[h264 @ 0x4e759540] mmco: unref short failure
+[h264 @ 0x4e759540] mmco: unref short failure
+[h264 @ 0x4e759540] mmco: unref short failure
+[h264 @ 0x4e759540] mmco: unref short failure
+[h264 @ 0x4e759540] mmco: unref short failure
+[h264 @ 0x4e759540] mmco: unref short failure
+[h264 @ 0x4e759540] mmco: unref short failure
+[h264 @ 0x4e759540] mmco: unref short failure
+[h264 @ 0x4e759540] mmco: unref short failure
+[h264 @ 0x4e759540] mmco: unref short failure
+[h264 @ 0x4e759540] mmco: unref short failure
+
+Model Responding:  32%|███▏      | 216/675 [1:58:55<2:46:49, 21.81s/it]
+Model Responding:  32%|███▏      | 217/675 [1:59:42<3:43:47, 29.32s/it]
+Model Responding:  32%|███▏      | 218/675 [2:00:26<4:18:22, 33.92s/it]
+Model Responding:  32%|███▏      | 219/675 [2:00:58<4:13:02, 33.30s/it]
+Model Responding:  33%|███▎      | 220/675 [2:01:10<3:24:19, 26.94s/it]
+Model Responding:  33%|███▎      | 221/675 [2:01:23<2:51:07, 22.62s/it]
+Model Responding:  33%|███▎      | 222/675 [2:02:21<4:11:55, 33.37s/it]
+Model Responding:  33%|███▎      | 223/675 [2:02:31<3:18:33, 26.36s/it]
+Model Responding:  33%|███▎      | 224/675 [2:03:06<3:36:04, 28.75s/it]
+Model Responding:  33%|███▎      | 225/675 [2:03:42<3:52:00, 30.93s/it]
+Model Responding:  33%|███▎      | 226/675 [2:03:58<3:19:22, 26.64s/it]
+Model Responding:  34%|███▎      | 227/675 [2:04:09<2:43:25, 21.89s/it]
+Model Responding:  34%|███▍      | 228/675 [2:05:00<3:46:46, 30.44s/it]
+Model Responding:  34%|███▍      | 229/675 [2:05:51<4:33:41, 36.82s/it]
+Model Responding:  34%|███▍      | 230/675 [2:06:36<4:49:55, 39.09s/it]
+Model Responding:  34%|███▍      | 231/675 [2:07:02<4:21:48, 35.38s/it]
+Model Responding:  34%|███▍      | 232/675 [2:07:23<3:47:56, 30.87s/it]
+Model Responding:  35%|███▍      | 233/675 [2:07:51<3:41:26, 30.06s/it]
+Model Responding:  35%|███▍      | 234/675 [2:08:00<2:55:18, 23.85s/it]
+Model Responding:  35%|███▍      | 235/675 [2:08:45<3:41:06, 30.15s/it]
+Model Responding:  35%|███▍      | 236/675 [2:09:31<4:15:12, 34.88s/it]
+Model Responding:  35%|███▌      | 237/675 [2:09:57<3:55:59, 32.33s/it]
+Model Responding:  35%|███▌      | 238/675 [2:10:07<3:05:34, 25.48s/it]
+Model Responding:  35%|███▌      | 239/675 [2:10:56<3:57:12, 32.64s/it]
+Model Responding:  36%|███▌      | 240/675 [2:11:03<3:00:04, 24.84s/it]
+Model Responding:  36%|███▌      | 241/675 [2:11:10<2:20:36, 19.44s/it]
+Model Responding:  36%|███▌      | 242/675 [2:11:53<3:12:33, 26.68s/it]
+Model Responding:  36%|███▌      | 243/675 [2:12:06<2:41:21, 22.41s/it]
+Model Responding:  36%|███▌      | 244/675 [2:12:30<2:45:47, 23.08s/it]
+Model Responding:  36%|███▋      | 245/675 [2:12:42<2:20:06, 19.55s/it]
+Model Responding:  36%|███▋      | 246/675 [2:13:17<2:54:21, 24.39s/it]
+Model Responding:  37%|███▋      | 247/675 [2:13:28<2:24:59, 20.33s/it]
+Model Responding:  37%|███▋      | 248/675 [2:14:05<3:00:40, 25.39s/it]
+Model Responding:  37%|███▋      | 249/675 [2:14:36<3:11:52, 27.03s/it]
+Model Responding:  37%|███▋      | 250/675 [2:15:09<3:23:29, 28.73s/it]
+Model Responding:  37%|███▋      | 251/675 [2:15:54<3:56:36, 33.48s/it]
+Model Responding:  37%|███▋      | 252/675 [2:16:17<3:34:03, 30.36s/it]
+Model Responding:  37%|███▋      | 253/675 [2:16:27<2:52:02, 24.46s/it]
+Model Responding:  38%|███▊      | 254/675 [2:16:36<2:18:58, 19.81s/it]
+Model Responding:  38%|███▊      | 255/675 [2:17:01<2:28:16, 21.18s/it]
+Model Responding:  38%|███▊      | 256/675 [2:17:33<2:51:39, 24.58s/it]
+Model Responding:  38%|███▊      | 257/675 [2:17:45<2:24:37, 20.76s/it]
+Model Responding:  38%|███▊      | 258/675 [2:18:22<2:58:14, 25.65s/it]
+Model Responding:  38%|███▊      | 259/675 [2:18:51<3:04:55, 26.67s/it]
+Model Responding:  39%|███▊      | 260/675 [2:19:27<3:23:33, 29.43s/it]
+Model Responding:  39%|███▊      | 261/675 [2:20:06<3:42:02, 32.18s/it]
+Model Responding:  39%|███▉      | 262/675 [2:21:23<5:14:57, 45.76s/it]
+Model Responding:  39%|███▉      | 263/675 [2:21:40<4:14:56, 37.13s/it]
+Model Responding:  39%|███▉      | 264/675 [2:22:03<3:44:17, 32.74s/it]
+Model Responding:  39%|███▉      | 265/675 [2:22:13<2:59:00, 26.20s/it]
+Model Responding:  39%|███▉      | 266/675 [2:22:22<2:22:51, 20.96s/it]
+Model Responding:  40%|███▉      | 267/675 [2:22:33<2:01:13, 17.83s/it]
+Model Responding:  40%|███▉      | 268/675 [2:23:03<2:26:29, 21.60s/it]
+Model Responding:  40%|███▉      | 269/675 [2:23:11<1:58:01, 17.44s/it]
+Model Responding:  40%|████      | 270/675 [2:23:32<2:04:51, 18.50s/it]
+Model Responding:  40%|████      | 271/675 [2:23:42<1:46:58, 15.89s/it]
+Model Responding:  40%|████      | 272/675 [2:24:18<2:28:21, 22.09s/it]
+Model Responding:  40%|████      | 273/675 [2:25:04<3:16:29, 29.33s/it]
+Model Responding:  41%|████      | 274/675 [2:25:16<2:41:30, 24.17s/it]
+Model Responding:  41%|████      | 275/675 [2:25:26<2:11:41, 19.75s/it]
+Model Responding:  41%|████      | 276/675 [2:26:06<2:51:43, 25.82s/it]
+Model Responding:  41%|████      | 277/675 [2:26:37<3:01:06, 27.30s/it]
+Model Responding:  41%|████      | 278/675 [2:27:18<3:27:50, 31.41s/it]
+Model Responding:  41%|████▏     | 279/675 [2:27:49<3:26:56, 31.36s/it]
+Model Responding:  41%|████▏     | 280/675 [2:28:18<3:22:14, 30.72s/it]
+Model Responding:  42%|████▏     | 281/675 [2:28:51<3:25:10, 31.25s/it]
+Model Responding:  42%|████▏     | 282/675 [2:29:11<3:02:37, 27.88s/it]
+Model Responding:  42%|████▏     | 283/675 [2:29:52<3:28:59, 31.99s/it]
+Model Responding:  42%|████▏     | 284/675 [2:30:00<2:40:27, 24.62s/it][h264 @ 0x4db30340] mmco: unref short failure
+[h264 @ 0x4db30340] mmco: unref short failure
+
+Model Responding:  42%|████▏     | 285/675 [2:30:40<3:10:35, 29.32s/it]
+Model Responding:  42%|████▏     | 286/675 [2:31:16<3:22:33, 31.24s/it]
+Model Responding:  43%|████▎     | 287/675 [2:31:59<3:44:48, 34.77s/it]
+Model Responding:  43%|████▎     | 288/675 [2:32:29<3:36:14, 33.52s/it]
+Model Responding:  43%|████▎     | 289/675 [2:33:00<3:30:39, 32.75s/it]
+Model Responding:  43%|████▎     | 290/675 [2:33:29<3:23:11, 31.67s/it]
+Model Responding:  43%|████▎     | 291/675 [2:34:14<3:47:54, 35.61s/it]
+Model Responding:  43%|████▎     | 292/675 [2:35:00<4:07:31, 38.78s/it]
+Model Responding:  43%|████▎     | 293/675 [2:35:12<3:14:17, 30.52s/it]
+Model Responding:  44%|████▎     | 294/675 [2:36:09<4:05:04, 38.59s/it]
+Model Responding:  44%|████▎     | 295/675 [2:36:20<3:12:49, 30.45s/it]
+Model Responding:  44%|████▍     | 296/675 [2:36:47<3:04:01, 29.13s/it]
+Model Responding:  44%|████▍     | 297/675 [2:37:16<3:04:20, 29.26s/it]
+Model Responding:  44%|████▍     | 298/675 [2:38:15<3:58:50, 38.01s/it]
+Model Responding:  44%|████▍     | 299/675 [2:38:37<3:28:41, 33.30s/it]
+Model Responding:  44%|████▍     | 300/675 [2:38:58<3:06:19, 29.81s/it]
+Model Responding:  45%|████▍     | 301/675 [2:40:04<4:13:01, 40.59s/it]
+Model Responding:  45%|████▍     | 302/675 [2:40:46<4:14:54, 41.00s/it]
+Model Responding:  45%|████▍     | 303/675 [2:41:01<3:25:07, 33.09s/it]
+Model Responding:  45%|████▌     | 304/675 [2:41:11<2:41:28, 26.11s/it]
+Model Responding:  45%|████▌     | 305/675 [2:41:22<2:13:40, 21.68s/it]
+Model Responding:  45%|████▌     | 306/675 [2:41:54<2:32:50, 24.85s/it]
+Model Responding:  45%|████▌     | 307/675 [2:42:33<2:58:31, 29.11s/it]
+Model Responding:  46%|████▌     | 308/675 [2:43:21<3:31:43, 34.61s/it]
+Model Responding:  46%|████▌     | 309/675 [2:43:46<3:13:46, 31.77s/it]
+Model Responding:  46%|████▌     | 310/675 [2:44:38<3:49:30, 37.73s/it]
+Model Responding:  46%|████▌     | 311/675 [2:45:02<3:25:24, 33.86s/it]
+Model Responding:  46%|████▌     | 312/675 [2:45:34<3:20:58, 33.22s/it]
+Model Responding:  46%|████▋     | 313/675 [2:46:04<3:15:16, 32.37s/it]
+Model Responding:  47%|████▋     | 314/675 [2:46:52<3:41:24, 36.80s/it]
+Model Responding:  47%|████▋     | 315/675 [2:47:35<3:53:07, 38.86s/it]
+Model Responding:  47%|████▋     | 316/675 [2:47:58<3:24:13, 34.13s/it]
+Model Responding:  47%|████▋     | 317/675 [2:48:29<3:16:41, 32.97s/it]
+Model Responding:  47%|████▋     | 318/675 [2:48:46<2:47:49, 28.21s/it]
+Model Responding:  47%|████▋     | 319/675 [2:48:57<2:17:27, 23.17s/it]
+Model Responding:  47%|████▋     | 320/675 [2:49:28<2:30:16, 25.40s/it]
+Model Responding:  48%|████▊     | 321/675 [2:49:50<2:24:55, 24.56s/it]
+Model Responding:  48%|████▊     | 322/675 [2:50:36<3:01:22, 30.83s/it]
+Model Responding:  48%|████▊     | 323/675 [2:51:04<2:55:48, 29.97s/it]
+Model Responding:  48%|████▊     | 324/675 [2:51:31<2:50:20, 29.12s/it]
+Model Responding:  48%|████▊     | 325/675 [2:52:02<2:53:58, 29.82s/it]
+Model Responding:  48%|████▊     | 326/675 [2:52:33<2:54:38, 30.03s/it]
+Model Responding:  48%|████▊     | 327/675 [2:52:39<2:13:12, 22.97s/it]
+Model Responding:  49%|████▊     | 328/675 [2:52:44<1:41:20, 17.52s/it]
+Model Responding:  49%|████▊     | 329/675 [2:53:26<2:22:34, 24.72s/it]
+Model Responding:  49%|████▉     | 330/675 [2:54:05<2:47:50, 29.19s/it]
+Model Responding:  49%|████▉     | 331/675 [2:54:54<3:20:13, 34.92s/it]
+Model Responding:  49%|████▉     | 332/675 [2:55:05<2:39:51, 27.96s/it]
+Model Responding:  49%|████▉     | 333/675 [2:55:16<2:10:17, 22.86s/it][h264 @ 0x4d06d140] mmco: unref short failure
+[h264 @ 0x4d06d140] mmco: unref short failure
+
+Model Responding:  49%|████▉     | 334/675 [2:55:57<2:39:37, 28.09s/it]
+Model Responding:  50%|████▉     | 335/675 [2:56:07<2:08:38, 22.70s/it]
+Model Responding:  50%|████▉     | 336/675 [2:56:42<2:30:00, 26.55s/it][h264 @ 0x1022f780] mmco: unref short failure
+[h264 @ 0x1022f780] mmco: unref short failure
+
+Model Responding:  50%|████▉     | 337/675 [2:56:48<1:54:51, 20.39s/it]
+Model Responding:  50%|█████     | 338/675 [2:57:30<2:31:09, 26.91s/it]
+Model Responding:  50%|█████     | 339/675 [2:57:39<2:00:25, 21.50s/it]
+Model Responding:  50%|█████     | 340/675 [2:58:24<2:39:29, 28.57s/it]
+Model Responding:  51%|█████     | 341/675 [2:59:10<3:06:54, 33.58s/it]
+Model Responding:  51%|█████     | 342/675 [2:59:17<2:22:21, 25.65s/it]
+Model Responding:  51%|█████     | 343/675 [2:59:53<2:39:30, 28.83s/it]
+Model Responding:  51%|█████     | 344/675 [3:00:29<2:51:02, 31.00s/it]
+Model Responding:  51%|█████     | 345/675 [3:00:53<2:38:45, 28.86s/it]
+Model Responding:  51%|█████▏    | 346/675 [3:01:26<2:45:58, 30.27s/it]
+Model Responding:  51%|█████▏    | 347/675 [3:01:40<2:18:50, 25.40s/it][h264 @ 0x4bdc1580] mmco: unref short failure
+[h264 @ 0x4bdc1580] mmco: unref short failure
+
+Model Responding:  52%|█████▏    | 348/675 [3:02:07<2:19:31, 25.60s/it]
+Model Responding:  52%|█████▏    | 349/675 [3:02:44<2:38:10, 29.11s/it]
+Model Responding:  52%|█████▏    | 350/675 [3:03:22<2:51:51, 31.73s/it]
+Model Responding:  52%|█████▏    | 351/675 [3:03:48<2:42:51, 30.16s/it]
+Model Responding:  52%|█████▏    | 352/675 [3:03:57<2:07:50, 23.75s/it][h264 @ 0x4ce0f080] mmco: unref short failure
+
+Model Responding:  52%|█████▏    | 353/675 [3:04:57<3:05:54, 34.64s/it]
+Model Responding:  52%|█████▏    | 354/675 [3:05:07<2:25:57, 27.28s/it]
+Model Responding:  53%|█████▎    | 355/675 [3:05:57<3:00:56, 33.93s/it]
+Model Responding:  53%|█████▎    | 356/675 [3:06:10<2:26:55, 27.63s/it]
+Model Responding:  53%|█████▎    | 357/675 [3:06:32<2:17:50, 26.01s/it]
+Model Responding:  53%|█████▎    | 358/675 [3:06:59<2:19:40, 26.44s/it]
+Model Responding:  53%|█████▎    | 359/675 [3:07:36<2:34:56, 29.42s/it]
+Model Responding:  53%|█████▎    | 360/675 [3:08:18<2:54:43, 33.28s/it]
+Model Responding:  53%|█████▎    | 361/675 [3:09:11<3:25:26, 39.26s/it]
+Model Responding:  54%|█████▎    | 362/675 [3:09:17<2:32:32, 29.24s/it]
+Model Responding:  54%|█████▍    | 363/675 [3:09:26<2:00:30, 23.17s/it]
+Model Responding:  54%|█████▍    | 364/675 [3:09:57<2:12:21, 25.53s/it]
+Model Responding:  54%|█████▍    | 365/675 [3:10:04<1:43:24, 20.01s/it]
+Model Responding:  54%|█████▍    | 366/675 [3:10:33<1:57:04, 22.73s/it]
+Model Responding:  54%|█████▍    | 367/675 [3:10:44<1:37:54, 19.07s/it]
+Model Responding:  55%|█████▍    | 368/675 [3:10:53<1:22:50, 16.19s/it]
+Model Responding:  55%|█████▍    | 369/675 [3:11:04<1:13:39, 14.44s/it]
+Model Responding:  55%|█████▍    | 370/675 [3:11:14<1:07:49, 13.34s/it]
+Model Responding:  55%|█████▍    | 371/675 [3:12:08<2:08:39, 25.39s/it]
+Model Responding:  55%|█████▌    | 372/675 [3:12:18<1:44:49, 20.76s/it]
+Model Responding:  55%|█████▌    | 373/675 [3:12:51<2:03:48, 24.60s/it]
+Model Responding:  55%|█████▌    | 374/675 [3:13:25<2:16:24, 27.19s/it]
+Model Responding:  56%|█████▌    | 375/675 [3:13:56<2:22:31, 28.51s/it]
+Model Responding:  56%|█████▌    | 376/675 [3:14:08<1:56:30, 23.38s/it]
+Model Responding:  56%|█████▌    | 377/675 [3:14:14<1:31:30, 18.42s/it]
+Model Responding:  56%|█████▌    | 378/675 [3:15:11<2:27:46, 29.85s/it]
+Model Responding:  56%|█████▌    | 379/675 [3:15:21<1:57:53, 23.90s/it]
+Model Responding:  56%|█████▋    | 380/675 [3:15:50<2:04:41, 25.36s/it]
+Model Responding:  56%|█████▋    | 381/675 [3:16:11<1:57:46, 24.03s/it]
+Model Responding:  57%|█████▋    | 382/675 [3:16:18<1:33:13, 19.09s/it]
+Model Responding:  57%|█████▋    | 383/675 [3:17:04<2:11:54, 27.11s/it]
+Model Responding:  57%|█████▋    | 384/675 [3:17:49<2:37:00, 32.37s/it]
+Model Responding:  57%|█████▋    | 385/675 [3:18:01<2:06:47, 26.23s/it]
+Model Responding:  57%|█████▋    | 386/675 [3:18:08<1:38:34, 20.46s/it]
+Model Responding:  57%|█████▋    | 387/675 [3:18:34<1:46:03, 22.10s/it]
+Model Responding:  57%|█████▋    | 388/675 [3:19:05<1:59:16, 24.94s/it]
+Model Responding:  58%|█████▊    | 389/675 [3:19:18<1:41:07, 21.22s/it]
+Model Responding:  58%|█████▊    | 390/675 [3:20:10<2:24:49, 30.49s/it]
+Model Responding:  58%|█████▊    | 391/675 [3:20:37<2:20:22, 29.66s/it]
+Model Responding:  58%|█████▊    | 392/675 [3:21:16<2:32:20, 32.30s/it]
+Model Responding:  58%|█████▊    | 393/675 [3:21:57<2:44:28, 35.00s/it]
+Model Responding:  58%|█████▊    | 394/675 [3:22:41<2:55:41, 37.51s/it]
+Model Responding:  59%|█████▊    | 395/675 [3:23:10<2:44:18, 35.21s/it]
+Model Responding:  59%|█████▊    | 396/675 [3:24:40<3:59:32, 51.52s/it]
+Model Responding:  59%|█████▉    | 397/675 [3:24:52<3:03:20, 39.57s/it]
+Model Responding:  59%|█████▉    | 398/675 [3:25:22<2:49:24, 36.69s/it]
+Model Responding:  59%|█████▉    | 399/675 [3:25:31<2:10:36, 28.39s/it]
+Model Responding:  59%|█████▉    | 400/675 [3:25:58<2:08:27, 28.03s/it]
+Model Responding:  59%|█████▉    | 401/675 [3:26:30<2:12:57, 29.11s/it]
+Model Responding:  60%|█████▉    | 402/675 [3:27:02<2:17:11, 30.15s/it]
+Model Responding:  60%|█████▉    | 403/675 [3:27:22<2:02:15, 26.97s/it]
+Model Responding:  60%|█████▉    | 404/675 [3:27:58<2:15:03, 29.90s/it]
+Model Responding:  60%|██████    | 405/675 [3:28:30<2:17:05, 30.46s/it]
+Model Responding:  60%|██████    | 406/675 [3:28:43<1:53:06, 25.23s/it][h264 @ 0x4dfc1f00] mmco: unref short failure
+[h264 @ 0x4dfc1f00] mmco: unref short failure
+[h264 @ 0x4dfc1f00] mmco: unref short failure
+[h264 @ 0x4dfc1f00] mmco: unref short failure
+[h264 @ 0x4dfc1f00] mmco: unref short failure
+[h264 @ 0x4dfc1f00] mmco: unref short failure
+[h264 @ 0x4dfc1f00] mmco: unref short failure
+[h264 @ 0x4dfc1f00] mmco: unref short failure
+[h264 @ 0x4dfc1f00] mmco: unref short failure
+[h264 @ 0x4dfc1f00] mmco: unref short failure
+[h264 @ 0x4dfc1f00] mmco: unref short failure
+[h264 @ 0x4dfc1f00] mmco: unref short failure
+[h264 @ 0x4dfc1f00] mmco: unref short failure
+[h264 @ 0x4dfc1f00] mmco: unref short failure
+[h264 @ 0x4dfc1f00] mmco: unref short failure
+[h264 @ 0x4dfc1f00] mmco: unref short failure
+[h264 @ 0x4dfc1f00] mmco: unref short failure
+
+Model Responding:  60%|██████    | 407/675 [3:29:27<2:17:36, 30.81s/it]
+Model Responding:  60%|██████    | 408/675 [3:29:37<1:49:58, 24.71s/it]
+Model Responding:  61%|██████    | 409/675 [3:29:50<1:32:46, 20.93s/it]
+Model Responding:  61%|██████    | 410/675 [3:29:59<1:17:32, 17.56s/it][h264 @ 0x4e795e80] mmco: unref short failure
+[h264 @ 0x4e795e80] mmco: unref short failure
+
+Model Responding:  61%|██████    | 411/675 [3:30:42<1:50:08, 25.03s/it]
+Model Responding:  61%|██████    | 412/675 [3:31:23<2:10:31, 29.78s/it]
+Model Responding:  61%|██████    | 413/675 [3:31:32<1:43:01, 23.59s/it]
+Model Responding:  61%|██████▏   | 414/675 [3:32:17<2:10:56, 30.10s/it]
+Model Responding:  61%|██████▏   | 415/675 [3:32:33<1:51:51, 25.81s/it]
+Model Responding:  62%|██████▏   | 416/675 [3:32:42<1:29:54, 20.83s/it]
+Model Responding:  62%|██████▏   | 417/675 [3:32:51<1:14:42, 17.37s/it]
+Model Responding:  62%|██████▏   | 418/675 [3:32:59<1:02:04, 14.49s/it]
+Model Responding:  62%|██████▏   | 419/675 [3:33:18<1:08:00, 15.94s/it]
+Model Responding:  62%|██████▏   | 420/675 [3:33:38<1:11:51, 16.91s/it]
+Model Responding:  62%|██████▏   | 421/675 [3:33:48<1:03:21, 14.97s/it]
+Model Responding:  63%|██████▎   | 422/675 [3:34:05<1:06:06, 15.68s/it]
+Model Responding:  63%|██████▎   | 423/675 [3:34:52<1:44:23, 24.85s/it]
+Model Responding:  63%|██████▎   | 424/675 [3:34:58<1:21:18, 19.44s/it]
+Model Responding:  63%|██████▎   | 425/675 [3:35:47<1:57:45, 28.26s/it]
+Model Responding:  63%|██████▎   | 426/675 [3:36:14<1:55:17, 27.78s/it]
+Model Responding:  63%|██████▎   | 427/675 [3:36:55<2:10:48, 31.65s/it]
+Model Responding:  63%|██████▎   | 428/675 [3:37:52<2:41:39, 39.27s/it]
+Model Responding:  64%|██████▎   | 429/675 [3:38:04<2:07:29, 31.10s/it]
+Model Responding:  64%|██████▎   | 430/675 [3:38:12<1:39:28, 24.36s/it]
+Model Responding:  64%|██████▍   | 431/675 [3:38:22<1:21:22, 20.01s/it]
+Model Responding:  64%|██████▍   | 432/675 [3:38:37<1:14:21, 18.36s/it]
+Model Responding:  64%|██████▍   | 433/675 [3:38:47<1:04:19, 15.95s/it]
+Model Responding:  64%|██████▍   | 434/675 [3:39:30<1:36:49, 24.11s/it][h264 @ 0xbe3bac0] mmco: unref short failure
+
+Model Responding:  64%|██████▍   | 435/675 [3:39:37<1:16:15, 19.07s/it]
+Model Responding:  65%|██████▍   | 436/675 [3:39:47<1:04:11, 16.12s/it]
+Model Responding:  65%|██████▍   | 437/675 [3:40:07<1:08:51, 17.36s/it]
+Model Responding:  65%|██████▍   | 438/675 [3:40:36<1:22:00, 20.76s/it]
+Model Responding:  65%|██████▌   | 439/675 [3:40:57<1:22:34, 20.99s/it]
+Model Responding:  65%|██████▌   | 440/675 [3:41:09<1:11:23, 18.23s/it]
+Model Responding:  65%|██████▌   | 441/675 [3:41:33<1:17:24, 19.85s/it]
+Model Responding:  65%|██████▌   | 442/675 [3:41:40<1:02:04, 15.99s/it]
+Model Responding:  66%|██████▌   | 443/675 [3:41:45<49:47, 12.88s/it]  
+Model Responding:  66%|██████▌   | 444/675 [3:41:54<44:50, 11.65s/it]
+Model Responding:  66%|██████▌   | 445/675 [3:42:25<1:06:48, 17.43s/it]
+Model Responding:  66%|██████▌   | 446/675 [3:42:37<1:00:14, 15.78s/it]
+Model Responding:  66%|██████▌   | 447/675 [3:42:44<50:10, 13.21s/it]  
+Model Responding:  66%|██████▋   | 448/675 [3:43:13<1:08:02, 17.99s/it]
+Model Responding:  67%|██████▋   | 449/675 [3:43:24<1:00:05, 15.96s/it]
+Model Responding:  67%|██████▋   | 450/675 [3:43:56<1:17:47, 20.74s/it]
+Model Responding:  67%|██████▋   | 451/675 [3:44:08<1:07:43, 18.14s/it]
+Model Responding:  67%|██████▋   | 452/675 [3:44:44<1:26:58, 23.40s/it]
+Model Responding:  67%|██████▋   | 453/675 [3:45:22<1:42:14, 27.63s/it]
+Model Responding:  67%|██████▋   | 454/675 [3:46:04<1:58:33, 32.19s/it]
+Model Responding:  67%|██████▋   | 455/675 [3:46:21<1:40:27, 27.40s/it]
+Model Responding:  68%|██████▊   | 456/675 [3:46:33<1:23:07, 22.78s/it]
+Model Responding:  68%|██████▊   | 457/675 [3:47:15<1:44:08, 28.66s/it]
+Model Responding:  68%|██████▊   | 458/675 [3:47:46<1:46:36, 29.48s/it]
+Model Responding:  68%|██████▊   | 459/675 [3:48:35<2:06:27, 35.13s/it]
+Model Responding:  68%|██████▊   | 460/675 [3:48:46<1:39:50, 27.86s/it]
+Model Responding:  68%|██████▊   | 461/675 [3:48:59<1:23:46, 23.49s/it]
+Model Responding:  68%|██████▊   | 462/675 [3:49:31<1:32:06, 25.95s/it]
+Model Responding:  69%|██████▊   | 463/675 [3:49:57<1:32:12, 26.10s/it]
+Model Responding:  69%|██████▊   | 464/675 [3:50:08<1:15:58, 21.61s/it]
+Model Responding:  69%|██████▉   | 465/675 [3:50:15<59:38, 17.04s/it]  
+Model Responding:  69%|██████▉   | 466/675 [3:50:26<53:44, 15.43s/it]
+Model Responding:  69%|██████▉   | 467/675 [3:51:00<1:13:01, 21.06s/it]
+Model Responding:  69%|██████▉   | 468/675 [3:51:07<58:00, 16.81s/it]  
+Model Responding:  69%|██████▉   | 469/675 [3:51:13<46:04, 13.42s/it]
+Model Responding:  70%|██████▉   | 470/675 [3:51:38<58:04, 17.00s/it]
+Model Responding:  70%|██████▉   | 471/675 [3:52:23<1:26:10, 25.35s/it]
+Model Responding:  70%|██████▉   | 472/675 [3:52:30<1:07:27, 19.94s/it]
+Model Responding:  70%|███████   | 473/675 [3:53:14<1:30:47, 26.97s/it]
+Model Responding:  70%|███████   | 474/675 [3:53:31<1:20:25, 24.01s/it]
+Model Responding:  70%|███████   | 475/675 [3:53:40<1:05:24, 19.62s/it]
+Model Responding:  71%|███████   | 476/675 [3:53:47<52:21, 15.79s/it]  
+Model Responding:  71%|███████   | 477/675 [3:54:27<1:16:25, 23.16s/it]
+Model Responding:  71%|███████   | 478/675 [3:54:40<1:05:43, 20.02s/it]
+Model Responding:  71%|███████   | 479/675 [3:54:50<55:11, 16.89s/it]  
+Model Responding:  71%|███████   | 480/675 [3:55:14<1:01:46, 19.01s/it]
+Model Responding:  71%|███████▏  | 481/675 [3:55:44<1:12:39, 22.47s/it]
+Model Responding:  71%|███████▏  | 482/675 [3:55:53<59:30, 18.50s/it]  
+Model Responding:  72%|███████▏  | 483/675 [3:56:06<53:37, 16.76s/it]
+Model Responding:  72%|███████▏  | 484/675 [3:56:15<45:54, 14.42s/it]
+Model Responding:  72%|███████▏  | 485/675 [3:56:24<40:38, 12.84s/it]
+Model Responding:  72%|███████▏  | 486/675 [3:56:31<34:21, 10.91s/it]
+Model Responding:  72%|███████▏  | 487/675 [3:56:38<30:29,  9.73s/it]
+Model Responding:  72%|███████▏  | 488/675 [3:56:48<30:52,  9.91s/it]
+Model Responding:  72%|███████▏  | 489/675 [3:56:57<30:22,  9.80s/it]
+Model Responding:  73%|███████▎  | 490/675 [3:57:06<29:28,  9.56s/it]
+Model Responding:  73%|███████▎  | 491/675 [3:57:16<29:24,  9.59s/it]
+Model Responding:  73%|███████▎  | 492/675 [3:57:29<31:50, 10.44s/it]
+Model Responding:  73%|███████▎  | 493/675 [3:57:56<46:48, 15.43s/it]
+Model Responding:  73%|███████▎  | 494/675 [3:58:35<1:08:17, 22.64s/it]
+Model Responding:  73%|███████▎  | 495/675 [3:58:48<58:48, 19.60s/it]  
+Model Responding:  73%|███████▎  | 496/675 [3:59:27<1:16:14, 25.56s/it]
+Model Responding:  74%|███████▎  | 497/675 [4:00:06<1:27:55, 29.64s/it]
+Model Responding:  74%|███████▍  | 498/675 [4:00:36<1:27:29, 29.66s/it]
+Model Responding:  74%|███████▍  | 499/675 [4:00:49<1:12:10, 24.60s/it]
+Model Responding:  74%|███████▍  | 500/675 [4:01:20<1:17:22, 26.53s/it]
+Model Responding:  74%|███████▍  | 501/675 [4:01:28<1:01:02, 21.05s/it]
+Model Responding:  74%|███████▍  | 502/675 [4:01:35<48:43, 16.90s/it]  [h264 @ 0x4cc48700] mmco: unref short failure
+
+Model Responding:  75%|███████▍  | 503/675 [4:01:47<44:22, 15.48s/it]
+Model Responding:  75%|███████▍  | 504/675 [4:01:59<41:05, 14.42s/it]
+Model Responding:  75%|███████▍  | 505/675 [4:02:10<37:39, 13.29s/it]
+Model Responding:  75%|███████▍  | 506/675 [4:02:46<56:13, 19.96s/it]
+Model Responding:  75%|███████▌  | 507/675 [4:02:57<48:30, 17.33s/it]
+Model Responding:  75%|███████▌  | 508/675 [4:03:23<55:24, 19.90s/it]
+Model Responding:  75%|███████▌  | 509/675 [4:03:34<47:53, 17.31s/it]
+Model Responding:  76%|███████▌  | 510/675 [4:03:43<40:50, 14.85s/it]
+Model Responding:  76%|███████▌  | 511/675 [4:03:54<37:33, 13.74s/it]
+Model Responding:  76%|███████▌  | 512/675 [4:04:25<51:29, 18.96s/it]
+Model Responding:  76%|███████▌  | 513/675 [4:04:35<43:24, 16.08s/it]
+Model Responding:  76%|███████▌  | 514/675 [4:04:47<39:47, 14.83s/it]
+Model Responding:  76%|███████▋  | 515/675 [4:05:07<44:00, 16.50s/it]
+Model Responding:  76%|███████▋  | 516/675 [4:05:34<52:28, 19.80s/it]
+Model Responding:  77%|███████▋  | 517/675 [4:05:43<43:18, 16.45s/it]
+Model Responding:  77%|███████▋  | 518/675 [4:06:16<55:42, 21.29s/it]
+Model Responding:  77%|███████▋  | 519/675 [4:06:41<58:46, 22.61s/it]
+Model Responding:  77%|███████▋  | 520/675 [4:07:17<1:08:08, 26.38s/it]
+Model Responding:  77%|███████▋  | 521/675 [4:07:29<57:02, 22.22s/it]  [h264 @ 0x4d7e3a80] mmco: unref short failure
+[h264 @ 0x4d7e3a80] mmco: unref short failure
+[h264 @ 0x4d7e3a80] mmco: unref short failure
+[h264 @ 0x4d7e3a80] mmco: unref short failure
+[h264 @ 0x4d7e3a80] mmco: unref short failure
+[h264 @ 0x4d7e3a80] mmco: unref short failure
+[h264 @ 0x4d7e3a80] mmco: unref short failure
+[h264 @ 0x4d7e3a80] mmco: unref short failure
+[h264 @ 0x4d7e3a80] mmco: unref short failure
+[h264 @ 0x4d7e3a80] mmco: unref short failure
+[h264 @ 0x4d7e3a80] mmco: unref short failure
+[h264 @ 0x4d7e3a80] mmco: unref short failure
+[h264 @ 0x4d7e3a80] mmco: unref short failure
+[h264 @ 0x4d7e3a80] mmco: unref short failure
+[h264 @ 0x4d7e3a80] mmco: unref short failure
+[h264 @ 0x4d7e3a80] mmco: unref short failure
+[h264 @ 0x4d7e3a80] mmco: unref short failure
+
+Model Responding:  77%|███████▋  | 522/675 [4:08:02<1:05:15, 25.59s/it]
+Model Responding:  77%|███████▋  | 523/675 [4:08:10<51:03, 20.15s/it]  
+Model Responding:  78%|███████▊  | 524/675 [4:08:20<43:15, 17.19s/it]
+Model Responding:  78%|███████▊  | 525/675 [4:09:21<1:15:48, 30.32s/it]
+Model Responding:  78%|███████▊  | 526/675 [4:09:39<1:06:17, 26.69s/it]
+Model Responding:  78%|███████▊  | 527/675 [4:10:08<1:07:01, 27.17s/it]
+Model Responding:  78%|███████▊  | 528/675 [4:10:18<53:54, 22.00s/it]  
+Model Responding:  78%|███████▊  | 529/675 [4:10:30<46:30, 19.11s/it]
+Model Responding:  79%|███████▊  | 530/675 [4:11:15<1:04:50, 26.83s/it]
+Model Responding:  79%|███████▊  | 531/675 [4:11:39<1:02:15, 25.94s/it]
+Model Responding:  79%|███████▉  | 532/675 [4:12:16<1:09:45, 29.27s/it]
+Model Responding:  79%|███████▉  | 533/675 [4:12:47<1:10:31, 29.80s/it]
+Model Responding:  79%|███████▉  | 534/675 [4:13:23<1:14:28, 31.69s/it]
+Model Responding:  79%|███████▉  | 535/675 [4:13:55<1:14:30, 31.93s/it]
+Model Responding:  79%|███████▉  | 536/675 [4:14:07<59:40, 25.76s/it]  
+Model Responding:  80%|███████▉  | 537/675 [4:14:36<1:01:29, 26.73s/it]
+Model Responding:  80%|███████▉  | 538/675 [4:15:03<1:01:40, 27.01s/it]
+Model Responding:  80%|███████▉  | 539/675 [4:15:48<1:13:20, 32.36s/it]
+Model Responding:  80%|████████  | 540/675 [4:16:15<1:08:44, 30.55s/it]
+Model Responding:  80%|████████  | 541/675 [4:16:26<55:26, 24.82s/it]  
+Model Responding:  80%|████████  | 542/675 [4:16:39<47:01, 21.21s/it]
+Model Responding:  80%|████████  | 543/675 [4:17:07<51:08, 23.24s/it]
+Model Responding:  81%|████████  | 544/675 [4:17:17<42:03, 19.26s/it]
+Model Responding:  81%|████████  | 545/675 [4:17:43<46:14, 21.34s/it]
+Model Responding:  81%|████████  | 546/675 [4:18:03<45:21, 21.10s/it]
+Model Responding:  81%|████████  | 547/675 [4:19:01<1:08:17, 32.01s/it]
+Model Responding:  81%|████████  | 548/675 [4:19:30<1:05:45, 31.07s/it]
+Model Responding:  81%|████████▏ | 549/675 [4:19:36<49:26, 23.55s/it]  
+Model Responding:  81%|████████▏ | 550/675 [4:20:03<51:02, 24.50s/it]
+Model Responding:  82%|████████▏ | 551/675 [4:20:24<48:37, 23.53s/it]
+Model Responding:  82%|████████▏ | 552/675 [4:20:51<50:17, 24.54s/it]
+Model Responding:  82%|████████▏ | 553/675 [4:21:17<50:57, 25.06s/it]
+Model Responding:  82%|████████▏ | 554/675 [4:21:24<39:46, 19.72s/it][h264 @ 0x4e7aa1c0] mmco: unref short failure
+
+Model Responding:  82%|████████▏ | 555/675 [4:21:30<30:51, 15.43s/it]
+Model Responding:  82%|████████▏ | 556/675 [4:21:44<29:40, 14.96s/it]
+Model Responding:  83%|████████▎ | 557/675 [4:21:54<26:31, 13.49s/it]
+Model Responding:  83%|████████▎ | 558/675 [4:22:08<26:54, 13.80s/it][h264 @ 0x4e5d0040] mmco: unref short failure
+
+Model Responding:  83%|████████▎ | 559/675 [4:22:50<43:07, 22.31s/it]
+Model Responding:  83%|████████▎ | 560/675 [4:23:21<47:20, 24.70s/it]
+Model Responding:  83%|████████▎ | 561/675 [4:23:47<48:06, 25.32s/it]
+Model Responding:  83%|████████▎ | 562/675 [4:23:57<38:48, 20.61s/it]
+Model Responding:  83%|████████▎ | 563/675 [4:24:09<33:57, 18.19s/it]
+Model Responding:  84%|████████▎ | 564/675 [4:24:17<27:56, 15.10s/it]
+Model Responding:  84%|████████▎ | 565/675 [4:24:43<33:17, 18.16s/it]
+Model Responding:  84%|████████▍ | 566/675 [4:25:23<45:06, 24.83s/it]
+Model Responding:  84%|████████▍ | 567/675 [4:25:37<38:51, 21.59s/it]
+Model Responding:  84%|████████▍ | 568/675 [4:25:43<29:56, 16.79s/it]
+Model Responding:  84%|████████▍ | 569/675 [4:25:56<28:01, 15.87s/it]
+Model Responding:  84%|████████▍ | 570/675 [4:26:13<28:08, 16.08s/it]
+Model Responding:  85%|████████▍ | 571/675 [4:26:56<41:46, 24.10s/it]
+Model Responding:  85%|████████▍ | 572/675 [4:27:04<33:24, 19.46s/it]
+Model Responding:  85%|████████▍ | 573/675 [4:27:53<47:49, 28.13s/it]
+Model Responding:  85%|████████▌ | 574/675 [4:28:41<57:40, 34.26s/it]
+Model Responding:  85%|████████▌ | 575/675 [4:28:53<45:32, 27.32s/it]
+Model Responding:  85%|████████▌ | 576/675 [4:29:21<45:50, 27.78s/it]
+Model Responding:  85%|████████▌ | 577/675 [4:29:30<36:13, 22.18s/it]
+Model Responding:  86%|████████▌ | 578/675 [4:29:44<31:26, 19.45s/it]
+Model Responding:  86%|████████▌ | 579/675 [4:29:54<26:44, 16.71s/it]
+Model Responding:  86%|████████▌ | 580/675 [4:30:05<24:00, 15.16s/it]
+Model Responding:  86%|████████▌ | 581/675 [4:30:18<22:22, 14.28s/it]
+Model Responding:  86%|████████▌ | 582/675 [4:30:28<20:05, 12.96s/it]
+Model Responding:  86%|████████▋ | 583/675 [4:30:56<27:02, 17.64s/it]
+Model Responding:  87%|████████▋ | 584/675 [4:31:02<21:31, 14.20s/it]
+Model Responding:  87%|████████▋ | 585/675 [4:31:13<19:45, 13.17s/it]
+Model Responding:  87%|████████▋ | 586/675 [4:31:20<16:54, 11.40s/it]
+Model Responding:  87%|████████▋ | 587/675 [4:31:59<28:35, 19.50s/it]
+Model Responding:  87%|████████▋ | 588/675 [4:32:09<24:06, 16.63s/it]
+Model Responding:  87%|████████▋ | 589/675 [4:32:19<21:09, 14.76s/it]
+Model Responding:  87%|████████▋ | 590/675 [4:32:47<26:22, 18.61s/it]
+Model Responding:  88%|████████▊ | 591/675 [4:32:56<22:09, 15.83s/it]
+Model Responding:  88%|████████▊ | 592/675 [4:33:07<19:47, 14.30s/it]
+Model Responding:  88%|████████▊ | 593/675 [4:33:34<24:54, 18.22s/it]
+Model Responding:  88%|████████▊ | 594/675 [4:34:00<27:31, 20.39s/it]
+Model Responding:  88%|████████▊ | 595/675 [4:34:06<21:28, 16.10s/it]
+Model Responding:  88%|████████▊ | 596/675 [4:34:11<17:04, 12.97s/it][h264 @ 0x4f981080] mmco: unref short failure
+[h264 @ 0x4f981080] mmco: unref short failure
+[h264 @ 0x4f981080] mmco: unref short failure
+[h264 @ 0x4f981080] mmco: unref short failure
+[h264 @ 0x4f981080] mmco: unref short failure
+[h264 @ 0x4f981080] mmco: unref short failure
+[h264 @ 0x4f981080] mmco: unref short failure
+[h264 @ 0x4f981080] mmco: unref short failure
+[h264 @ 0x4f981080] mmco: unref short failure
+
+Model Responding:  88%|████████▊ | 597/675 [4:34:52<27:32, 21.19s/it][h264 @ 0x4f981080] mmco: unref short failure
+[h264 @ 0x4f981080] mmco: unref short failure
+[h264 @ 0x4f981080] mmco: unref short failure
+[h264 @ 0x4f981080] mmco: unref short failure
+[h264 @ 0x4f981080] mmco: unref short failure
+[h264 @ 0x4f981080] mmco: unref short failure
+[h264 @ 0x4f981080] mmco: unref short failure
+[h264 @ 0x4f981080] mmco: unref short failure
+
+Model Responding:  89%|████████▊ | 598/675 [4:35:42<38:22, 29.91s/it]
+Model Responding:  89%|████████▊ | 599/675 [4:36:26<43:14, 34.14s/it]
+Model Responding:  89%|████████▉ | 600/675 [4:36:37<33:58, 27.18s/it]
+Model Responding:  89%|████████▉ | 601/675 [4:37:04<33:34, 27.22s/it]
+Model Responding:  89%|████████▉ | 602/675 [4:37:53<40:53, 33.62s/it]
+Model Responding:  89%|████████▉ | 603/675 [4:38:05<32:40, 27.23s/it]
+Model Responding:  89%|████████▉ | 604/675 [4:38:39<34:43, 29.34s/it]
+Model Responding:  90%|████████▉ | 605/675 [4:38:50<27:37, 23.68s/it]
+Model Responding:  90%|████████▉ | 606/675 [4:39:20<29:34, 25.72s/it]
+Model Responding:  90%|████████▉ | 607/675 [4:39:58<33:20, 29.42s/it]
+Model Responding:  90%|█████████ | 608/675 [4:40:06<25:44, 23.05s/it]
+Model Responding:  90%|█████████ | 609/675 [4:40:13<19:56, 18.14s/it]
+Model Responding:  90%|█████████ | 610/675 [4:40:20<16:03, 14.82s/it]
+Model Responding:  91%|█████████ | 611/675 [4:41:01<24:06, 22.61s/it]
+Model Responding:  91%|█████████ | 612/675 [4:41:10<19:20, 18.41s/it]
+Model Responding:  91%|█████████ | 613/675 [4:41:17<15:39, 15.16s/it]
+Model Responding:  91%|█████████ | 614/675 [4:41:34<15:51, 15.61s/it]
+Model Responding:  91%|█████████ | 615/675 [4:42:06<20:37, 20.62s/it]
+Model Responding:  91%|█████████▏| 616/675 [4:42:37<23:15, 23.65s/it]
+Model Responding:  91%|█████████▏| 617/675 [4:42:50<19:50, 20.53s/it]
+Model Responding:  92%|█████████▏| 618/675 [4:42:58<15:59, 16.83s/it]
+Model Responding:  92%|█████████▏| 619/675 [4:43:04<12:36, 13.52s/it]
+Model Responding:  92%|█████████▏| 620/675 [4:43:13<11:08, 12.16s/it]
+Model Responding:  92%|█████████▏| 621/675 [4:43:17<08:37,  9.58s/it]
+Model Responding:  92%|█████████▏| 622/675 [4:43:49<14:25, 16.33s/it]
+Model Responding:  92%|█████████▏| 623/675 [4:44:00<12:46, 14.74s/it]
+Model Responding:  92%|█████████▏| 624/675 [4:44:07<10:34, 12.43s/it]
+Model Responding:  93%|█████████▎| 625/675 [4:44:27<12:17, 14.75s/it]
+Model Responding:  93%|█████████▎| 626/675 [4:44:54<15:08, 18.55s/it]
+Model Responding:  93%|█████████▎| 627/675 [4:45:05<12:57, 16.19s/it]
+Model Responding:  93%|█████████▎| 628/675 [4:45:12<10:33, 13.48s/it]
+Model Responding:  93%|█████████▎| 629/675 [4:45:18<08:38, 11.28s/it]
+Model Responding:  93%|█████████▎| 630/675 [4:45:28<08:08, 10.85s/it]
+Model Responding:  93%|█████████▎| 631/675 [4:45:38<07:43, 10.53s/it]
+Model Responding:  94%|█████████▎| 632/675 [4:45:49<07:42, 10.75s/it]
+Model Responding:  94%|█████████▍| 633/675 [4:46:02<07:53, 11.29s/it]
+Model Responding:  94%|█████████▍| 634/675 [4:46:26<10:20, 15.13s/it]
+Model Responding:  94%|█████████▍| 635/675 [4:46:33<08:31, 12.78s/it]
+Model Responding:  94%|█████████▍| 636/675 [4:46:43<07:42, 11.86s/it]
+Model Responding:  94%|█████████▍| 637/675 [4:46:50<06:36, 10.44s/it]
+Model Responding:  95%|█████████▍| 638/675 [4:47:02<06:43, 10.90s/it]
+Model Responding:  95%|█████████▍| 639/675 [4:47:13<06:35, 11.00s/it]
+Model Responding:  95%|█████████▍| 640/675 [4:47:23<06:13, 10.66s/it]
+Model Responding:  95%|█████████▍| 641/675 [4:47:34<05:59, 10.58s/it]
+Model Responding:  95%|█████████▌| 642/675 [4:48:03<08:51, 16.12s/it]
+Model Responding:  95%|█████████▌| 643/675 [4:48:10<07:10, 13.46s/it]
+Model Responding:  95%|█████████▌| 644/675 [4:48:41<09:41, 18.76s/it]
+Model Responding:  96%|█████████▌| 645/675 [4:48:50<07:57, 15.90s/it]
+Model Responding:  96%|█████████▌| 646/675 [4:49:01<06:56, 14.37s/it]
+Model Responding:  96%|█████████▌| 647/675 [4:49:33<09:08, 19.57s/it]
+Model Responding:  96%|█████████▌| 648/675 [4:49:42<07:25, 16.50s/it]
+Model Responding:  96%|█████████▌| 649/675 [4:49:49<05:53, 13.60s/it]
+Model Responding:  96%|█████████▋| 650/675 [4:49:59<05:12, 12.51s/it]
+Model Responding:  96%|█████████▋| 651/675 [4:50:26<06:45, 16.88s/it]
+Model Responding:  97%|█████████▋| 652/675 [4:50:36<05:44, 14.96s/it]
+Model Responding:  97%|█████████▋| 653/675 [4:50:46<04:56, 13.46s/it]
+Model Responding:  97%|█████████▋| 654/675 [4:50:58<04:33, 13.04s/it]
+Model Responding:  97%|█████████▋| 655/675 [4:51:45<07:39, 22.99s/it]
+Model Responding:  97%|█████████▋| 656/675 [4:52:06<07:10, 22.64s/it]
+Model Responding:  97%|█████████▋| 657/675 [4:52:40<07:46, 25.94s/it]
+Model Responding:  97%|█████████▋| 658/675 [4:52:51<06:05, 21.52s/it]
+Model Responding:  98%|█████████▊| 659/675 [4:52:58<04:35, 17.19s/it]
+Model Responding:  98%|█████████▊| 660/675 [4:53:08<03:44, 14.99s/it]
+Model Responding:  98%|█████████▊| 661/675 [4:53:40<04:40, 20.01s/it]
+Model Responding:  98%|█████████▊| 662/675 [4:53:52<03:49, 17.62s/it]
+Model Responding:  98%|█████████▊| 663/675 [4:53:59<02:52, 14.39s/it]
+Model Responding:  98%|█████████▊| 664/675 [4:54:06<02:15, 12.28s/it]
+Model Responding:  99%|█████████▊| 665/675 [4:54:17<01:57, 11.76s/it]
+Model Responding:  99%|█████████▊| 666/675 [4:54:32<01:55, 12.82s/it]
+Model Responding:  99%|█████████▉| 667/675 [4:55:11<02:44, 20.55s/it]
+Model Responding:  99%|█████████▉| 668/675 [4:55:43<02:49, 24.16s/it]
+Model Responding:  99%|█████████▉| 669/675 [4:55:55<02:02, 20.44s/it]
+Model Responding:  99%|█████████▉| 670/675 [4:56:01<01:20, 16.14s/it]
+Model Responding:  99%|█████████▉| 671/675 [4:56:30<01:19, 19.89s/it][h264 @ 0x4cde2280] mmco: unref short failure
+
+Model Responding: 100%|█████████▉| 672/675 [4:57:01<01:09, 23.31s/it]
+Model Responding: 100%|█████████▉| 673/675 [4:57:09<00:37, 18.68s/it]
+Model Responding: 100%|█████████▉| 674/675 [4:57:27<00:18, 18.62s/it]
+Model Responding: 100%|██████████| 675/675 [4:57:33<00:00, 14.72s/it]
+Model Responding: 100%|██████████| 675/675 [4:57:33<00:00, 26.45s/it]
+
+Postprocessing:   0%|          | 0/675 [00:00<?, ?it/s]
+Postprocessing:  40%|████      | 271/675 [00:00<00:00, 2705.85it/s]
+Postprocessing:  81%|████████  | 546/675 [00:00<00:00, 2726.13it/s]
+Postprocessing: 100%|██████████| 675/675 [00:00<00:00, 2726.57it/s]
+[32m2025-11-04 00:50:38.167[0m | [1mINFO    [0m | [36mutils[0m:[36mvideomme_aggregate_results[0m:[36m314[0m - [1mEvaluation on video Type: short:  73.9%[0m
+[32m2025-11-04 00:50:38.168[0m | [1mINFO    [0m | [36mutils[0m:[36mvideomme_aggregate_results[0m:[36m314[0m - [1mEvaluation on video Type: medium:  62.0%[0m
+[32m2025-11-04 00:50:38.169[0m | [1mINFO    [0m | [36mutils[0m:[36mvideomme_aggregate_results[0m:[36m314[0m - [1mEvaluation on video Type: long:  52.8%[0m
+[32m2025-11-04 00:50:38.170[0m | [1mINFO    [0m | [36mutils[0m:[36mvideomme_aggregate_results[0m:[36m323[0m - [1mEvaluation on Categories: Knowledge:  65.6%[0m
+[32m2025-11-04 00:50:38.170[0m | [1mINFO    [0m | [36mutils[0m:[36mvideomme_aggregate_results[0m:[36m323[0m - [1mEvaluation on Categories: Film & Television:  65.8%[0m
+[32m2025-11-04 00:50:38.171[0m | [1mINFO    [0m | [36mutils[0m:[36mvideomme_aggregate_results[0m:[36m323[0m - [1mEvaluation on Categories: Sports Competition:  61.6%[0m
+[32m2025-11-04 00:50:38.171[0m | [1mINFO    [0m | [36mutils[0m:[36mvideomme_aggregate_results[0m:[36m323[0m - [1mEvaluation on Categories: Artistic Performance:  62.5%[0m
+[32m2025-11-04 00:50:38.172[0m | [1mINFO    [0m | [36mutils[0m:[36mvideomme_aggregate_results[0m:[36m323[0m - [1mEvaluation on Categories: Life Record:  59.7%[0m
+[32m2025-11-04 00:50:38.172[0m | [1mINFO    [0m | [36mutils[0m:[36mvideomme_aggregate_results[0m:[36m323[0m - [1mEvaluation on Categories: Multilingual:  57.8%[0m
+[32m2025-11-04 00:50:38.173[0m | [1mINFO    [0m | [36mutils[0m:[36mvideomme_aggregate_results[0m:[36m332[0m - [1mEvaluation on Video Sub Categories: Humanity & History:  45.6%[0m
+[32m2025-11-04 00:50:38.173[0m | [1mINFO    [0m | [36mutils[0m:[36mvideomme_aggregate_results[0m:[36m332[0m - [1mEvaluation on Video Sub Categories: Literature & Art:  57.8%[0m
+[32m2025-11-04 00:50:38.174[0m | [1mINFO    [0m | [36mutils[0m:[36mvideomme_aggregate_results[0m:[36m332[0m - [1mEvaluation on Video Sub Categories: Biology & Medicine:  72.2%[0m
+[32m2025-11-04 00:50:38.174[0m | [1mINFO    [0m | [36mutils[0m:[36mvideomme_aggregate_results[0m:[36m332[0m - [1mEvaluation on Video Sub Categories: Finance & Commerce:  71.1%[0m
+[32m2025-11-04 00:50:38.175[0m | [1mINFO    [0m | [36mutils[0m:[36mvideomme_aggregate_results[0m:[36m332[0m - [1mEvaluation on Video Sub Categories: Astronomy:  72.2%[0m
+[32m2025-11-04 00:50:38.175[0m | [1mINFO    [0m | [36mutils[0m:[36mvideomme_aggregate_results[0m:[36m332[0m - [1mEvaluation on Video Sub Categories: Geography:  61.1%[0m
+[32m2025-11-04 00:50:38.175[0m | [1mINFO    [0m | [36mutils[0m:[36mvideomme_aggregate_results[0m:[36m332[0m - [1mEvaluation on Video Sub Categories: Law:  66.7%[0m
+[32m2025-11-04 00:50:38.176[0m | [1mINFO    [0m | [36mutils[0m:[36mvideomme_aggregate_results[0m:[36m332[0m - [1mEvaluation on Video Sub Categories: Life Tip:  74.4%[0m
+[32m2025-11-04 00:50:38.176[0m | [1mINFO    [0m | [36mutils[0m:[36mvideomme_aggregate_results[0m:[36m332[0m - [1mEvaluation on Video Sub Categories: Technology:  68.9%[0m
+[32m2025-11-04 00:50:38.177[0m | [1mINFO    [0m | [36mutils[0m:[36mvideomme_aggregate_results[0m:[36m332[0m - [1mEvaluation on Video Sub Categories: Animation:  57.8%[0m
+[32m2025-11-04 00:50:38.177[0m | [1mINFO    [0m | [36mutils[0m:[36mvideomme_aggregate_results[0m:[36m332[0m - [1mEvaluation on Video Sub Categories: Movie & TV Show:  65.6%[0m
+[32m2025-11-04 00:50:38.178[0m | [1mINFO    [0m | [36mutils[0m:[36mvideomme_aggregate_results[0m:[36m332[0m - [1mEvaluation on Video Sub Categories: Documentary:  63.3%[0m
+[32m2025-11-04 00:50:38.178[0m | [1mINFO    [0m | [36mutils[0m:[36mvideomme_aggregate_results[0m:[36m332[0m - [1mEvaluation on Video Sub Categories: News Report:  76.7%[0m
+[32m2025-11-04 00:50:38.179[0m | [1mINFO    [0m | [36mutils[0m:[36mvideomme_aggregate_results[0m:[36m332[0m - [1mEvaluation on Video Sub Categories: Esports:  57.8%[0m
+[32m2025-11-04 00:50:38.179[0m | [1mINFO    [0m | [36mutils[0m:[36mvideomme_aggregate_results[0m:[36m332[0m - [1mEvaluation on Video Sub Categories: Basketball:  45.6%[0m
+[32m2025-11-04 00:50:38.179[0m | [1mINFO    [0m | [36mutils[0m:[36mvideomme_aggregate_results[0m:[36m332[0m - [1mEvaluation on Video Sub Categories: Football:  72.2%[0m
+[32m2025-11-04 00:50:38.180[0m | [1mINFO    [0m | [36mutils[0m:[36mvideomme_aggregate_results[0m:[36m332[0m - [1mEvaluation on Video Sub Categories: Athletics:  62.2%[0m
+[32m2025-11-04 00:50:38.180[0m | [1mINFO    [0m | [36mutils[0m:[36mvideomme_aggregate_results[0m:[36m332[0m - [1mEvaluation on Video Sub Categories: Other Sports:  70.0%[0m
+[32m2025-11-04 00:50:38.181[0m | [1mINFO    [0m | [36mutils[0m:[36mvideomme_aggregate_results[0m:[36m332[0m - [1mEvaluation on Video Sub Categories: Stage Play:  74.4%[0m
+[32m2025-11-04 00:50:38.181[0m | [1mINFO    [0m | [36mutils[0m:[36mvideomme_aggregate_results[0m:[36m332[0m - [1mEvaluation on Video Sub Categories: Magic Show:  67.8%[0m
+[32m2025-11-04 00:50:38.182[0m | [1mINFO    [0m | [36mutils[0m:[36mvideomme_aggregate_results[0m:[36m332[0m - [1mEvaluation on Video Sub Categories: Variety Show:  50.0%[0m
+[32m2025-11-04 00:50:38.182[0m | [1mINFO    [0m | [36mutils[0m:[36mvideomme_aggregate_results[0m:[36m332[0m - [1mEvaluation on Video Sub Categories: Acrobatics:  57.8%[0m
+[32m2025-11-04 00:50:38.183[0m | [1mINFO    [0m | [36mutils[0m:[36mvideomme_aggregate_results[0m:[36m332[0m - [1mEvaluation on Video Sub Categories: Handicraft:  70.0%[0m
+[32m2025-11-04 00:50:38.183[0m | [1mINFO    [0m | [36mutils[0m:[36mvideomme_aggregate_results[0m:[36m332[0m - [1mEvaluation on Video Sub Categories: Food:  51.1%[0m
+[32m2025-11-04 00:50:38.184[0m | [1mINFO    [0m | [36mutils[0m:[36mvideomme_aggregate_results[0m:[36m332[0m - [1mEvaluation on Video Sub Categories: Fashion:  53.3%[0m
+[32m2025-11-04 00:50:38.184[0m | [1mINFO    [0m | [36mutils[0m:[36mvideomme_aggregate_results[0m:[36m332[0m - [1mEvaluation on Video Sub Categories: Daily Life:  54.4%[0m
+[32m2025-11-04 00:50:38.184[0m | [1mINFO    [0m | [36mutils[0m:[36mvideomme_aggregate_results[0m:[36m332[0m - [1mEvaluation on Video Sub Categories: Travel:  63.3%[0m
+[32m2025-11-04 00:50:38.185[0m | [1mINFO    [0m | [36mutils[0m:[36mvideomme_aggregate_results[0m:[36m332[0m - [1mEvaluation on Video Sub Categories: Pet & Animal:  71.1%[0m
+[32m2025-11-04 00:50:38.185[0m | [1mINFO    [0m | [36mutils[0m:[36mvideomme_aggregate_results[0m:[36m332[0m - [1mEvaluation on Video Sub Categories: Exercise:  54.4%[0m
+[32m2025-11-04 00:50:38.186[0m | [1mINFO    [0m | [36mutils[0m:[36mvideomme_aggregate_results[0m:[36m332[0m - [1mEvaluation on Video Sub Categories: Multilingual:  57.8%[0m
+[32m2025-11-04 00:50:38.186[0m | [1mINFO    [0m | [36mutils[0m:[36mvideomme_aggregate_results[0m:[36m341[0m - [1mEvaluation on Task Categories: Temporal Perception:  70.9%[0m
+[32m2025-11-04 00:50:38.187[0m | [1mINFO    [0m | [36mutils[0m:[36mvideomme_aggregate_results[0m:[36m341[0m - [1mEvaluation on Task Categories: Spatial Perception:  64.8%[0m
+[32m2025-11-04 00:50:38.188[0m | [1mINFO    [0m | [36mutils[0m:[36mvideomme_aggregate_results[0m:[36m341[0m - [1mEvaluation on Task Categories: Attribute Perception:  75.2%[0m
+[32m2025-11-04 00:50:38.188[0m | [1mINFO    [0m | [36mutils[0m:[36mvideomme_aggregate_results[0m:[36m341[0m - [1mEvaluation on Task Categories: Action Recognition:  63.6%[0m
+[32m2025-11-04 00:50:38.189[0m | [1mINFO    [0m | [36mutils[0m:[36mvideomme_aggregate_results[0m:[36m341[0m - [1mEvaluation on Task Categories: Object Recognition:  66.9%[0m
+[32m2025-11-04 00:50:38.189[0m | [1mINFO    [0m | [36mutils[0m:[36mvideomme_aggregate_results[0m:[36m341[0m - [1mEvaluation on Task Categories: OCR Problems:  66.9%[0m
+[32m2025-11-04 00:50:38.190[0m | [1mINFO    [0m | [36mutils[0m:[36mvideomme_aggregate_results[0m:[36m341[0m - [1mEvaluation on Task Categories: Counting Problem:  42.5%[0m
+[32m2025-11-04 00:50:38.190[0m | [1mINFO    [0m | [36mutils[0m:[36mvideomme_aggregate_results[0m:[36m341[0m - [1mEvaluation on Task Categories: Temporal Reasoning:  45.8%[0m
+[32m2025-11-04 00:50:38.191[0m | [1mINFO    [0m | [36mutils[0m:[36mvideomme_aggregate_results[0m:[36m341[0m - [1mEvaluation on Task Categories: Spatial Reasoning:  78.6%[0m
+[32m2025-11-04 00:50:38.191[0m | [1mINFO    [0m | [36mutils[0m:[36mvideomme_aggregate_results[0m:[36m341[0m - [1mEvaluation on Task Categories: Action Reasoning:  57.9%[0m
+[32m2025-11-04 00:50:38.192[0m | [1mINFO    [0m | [36mutils[0m:[36mvideomme_aggregate_results[0m:[36m341[0m - [1mEvaluation on Task Categories: Object Reasoning:  59.3%[0m
+[32m2025-11-04 00:50:38.192[0m | [1mINFO    [0m | [36mutils[0m:[36mvideomme_aggregate_results[0m:[36m341[0m - [1mEvaluation on Task Categories: Information Synopsis:  78.9%[0m
+[32m2025-11-04 00:50:38.193[0m | [1mINFO    [0m | [36mutils[0m:[36mvideomme_aggregate_results[0m:[36m348[0m - [1mOverall Performance:  62.9%[0m
+[32m2025-11-04 00:50:38.536[0m | [1mINFO    [0m | [36mlmms_eval.loggers.evaluation_tracker[0m:[36msave_results_aggregated[0m:[36m188[0m - [1mSaving results aggregated[0m
+qwen2_5_vl (pretrained=/home/shenleqi3/LLaVA_DATA/model_data/Qwen2.5-VL-7B-Instruct,use_flash_attention_2=True,fastvid_retention_ratio=0.27,fastvid_DySeg_c=8,fastvid_DySeg_tau=0.84,fastvid_DySeg_ignore=0.95,fastvid_STPrune_d=0.4,fastvid_DTM_p=4,fastvid_DTM_beta=0.6), gen_kwargs: (), limit: None, num_fewshot: None, batch_size: 1
+| Tasks  |Version|Filter|n-shot|         Metric          |   | Value |   |Stderr|
+|--------|-------|------|-----:|-------------------------|---|------:|---|------|
+|videomme|Yaml   |none  |     0|videomme_perception_score|↑  |62.8889|±  |   N/A|
+
