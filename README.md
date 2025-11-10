@@ -3,16 +3,16 @@
 We propose FastVID, a novel **training-free** pruning framework that employs Dynamic Temporal Segmentation to partition videos into temporally ordered segments and Density Spatiotemporal Pruning to retain global segment information and key details.
 On LLaVA-OneVision-7B, FastVID effectively prunes **90.3%** of video tokens, reduces FLOPs to **8.3%**, and accelerates the prefilling stage by **7.1x**, while maintaining **98.0%** of the original accuracy. 
 
-## Implementation:
+## Implementation
 
 The FastVID implementation in LLaVA-OneVision adopts a **parallelized design** for computing density scores, as detailed in the Efficiency Comparison section on page 8 of the main paper.
 
-- [x] FastVID on **LLaVA-OneVision** [\[Core code\]](fastvid_llavaonevision/LLaVA-NeXT/llava/model/language_model/modeling_qwen2.py#L901)[\[Log\]](fastvid_llavaonevision/scripts/llava_onevision.log) 
+- [x] FastVID on **LLaVA-OneVision** [\[Core code\]](fastvid_llavaonevision/LLaVA-NeXT/llava/model/language_model/modeling_qwen2.py#L901) [\[Log\]](fastvid_llavaonevision/scripts/llava_onevision.log) 
 
 For the other models, we provide a straightforward implementation.
 
-- [x] FastVID on **LLaVA-Video** [\[Core code\]](fastvid_llavavideo/LLaVA-NeXT/llava/model/language_model/modeling_qwen2.py#L893)[\[Log\]](fastvid_llavavideo/scripts/llava_vid.log) 
-- [x] FastVID on **Qwen2.5-VL** [\[Core code\]](fastvid_qwen25vl/lmms-eval/lmms_eval/models/qwenvlutils/modeling_qwen2_5_vl.py#L1889)[\[Log\]](fastvid_qwen25vl/scripts/qwen2_5_vl.log) 
+- [x] FastVID on **LLaVA-Video** [\[Core code\]](fastvid_llavavideo/LLaVA-NeXT/llava/model/language_model/modeling_qwen2.py#L893) [\[Log\]](fastvid_llavavideo/scripts/llava_vid.log) 
+- [x] FastVID on **Qwen2.5-VL** [\[Core code\]](fastvid_qwen25vl/lmms-eval/lmms_eval/models/qwenvlutils/modeling_qwen2_5_vl.py#L1889) [\[Log\]](fastvid_qwen25vl/scripts/qwen2_5_vl.log) 
 
 ## Installation and Evaluation
 
